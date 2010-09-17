@@ -1,0 +1,9 @@
+General:
+- Add layout
+- Add header and footer partials
+- add compass/sass
+- add default stylesheet
+- Add test examples for page titles
+- Add i18n translation for page titles
+- Add authlogic
+- Add error partial
