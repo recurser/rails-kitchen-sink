@@ -1,7 +1,12 @@
 en:
   common:
-    title_prefix: "Recursive"
+    title_prefix:             "Recursive"
+    header_link_home:         "Home"
+    header_link_about:        "About"
+    header_link_contact:      "Contact"
+    footer_copyright:         "Copyright 2010 Recursive Design"
+    
   pages:
-    title_home:    "Home"
-    title_contact: "Contact"
-    title_about:   "About"
+    title_home:               "Home"
+    title_contact:            "Contact"
+    title_about:              "About"
