@@ -4,6 +4,7 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'will_paginate', '3.0.pre'
 gem 'haml', '3.0.18'
+gem 'i18n', '0.4.1'
 
 group :development do
   gem 'rspec-rails', '2.0.0.beta.18'
