@@ -2,14 +2,15 @@
   %head
     %meta{"http-equiv"=>"Content-type", :content=>"text/html;charset=utf-8"}/
     %title= title
-    = stylesheet_link_tag :all
-    = javascript_include_tag :defaults
+    = render 'layouts/stylesheets'
+    = render 'layouts/javascript'
     = csrf_meta_tag 
 
   %body>
     = render 'layouts/header'
-
-    = yield
+    
+    .content
+      = yield
     
     = render 'layouts/footer'
     
