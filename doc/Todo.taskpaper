@@ -7,3 +7,4 @@ General:
 - Add i18n translation for page titles
 - Add authlogic
 - Add error partial
+- coffeescript

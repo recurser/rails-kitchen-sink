@@ -5,6 +5,9 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'will_paginate', '3.0.pre'
 gem 'haml', '3.0.18'
 gem 'i18n', '0.4.1'
+gem 'fancy-buttons', '0.5.4'
+gem 'compass', '0.10.5'
+gem 'compass-960-plugin', :require => 'ninesixty'
 
 group :development do
   gem 'rspec-rails', '2.0.0.beta.18'
