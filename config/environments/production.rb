@@ -46,4 +46,7 @@ RecursiveRailsStarter::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  # Don't try and compile SASS on Heroku
+  Sass::Plugin.options[:never_update] = true
 end
