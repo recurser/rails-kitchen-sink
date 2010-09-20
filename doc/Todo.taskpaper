@@ -1,10 +1,11 @@
 General:
-- Add layout
-- Add header and footer partials
-- add compass/sass
+- Add layout @done
+- Add header and footer partials @done
+- add compass/sass @done
 - add default stylesheet
 - Add test examples for page titles
 - Add i18n translation for page titles
 - Add authlogic
 - Add error partial
-- coffeescript
+- Add coffeescript
+- Add CheddarGetter and signup support
