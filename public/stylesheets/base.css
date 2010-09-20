@@ -1,0 +1,157 @@
+/* line 4, ../../app/stylesheets/base.sass */
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+/* line 33, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_1, .content .grid_2, .content .grid_3, .content .grid_4, .content .grid_5, .content .grid_6, .content .grid_7, .content .grid_8, .content .grid_9, .content .grid_10, .content .grid_11, .content .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_1 {
+  width: 60px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_2 {
+  width: 140px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_3 {
+  width: 220px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_4 {
+  width: 300px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_5 {
+  width: 380px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_6 {
+  width: 460px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_7 {
+  width: 540px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_8 {
+  width: 620px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_9 {
+  width: 700px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_10 {
+  width: 780px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_11 {
+  width: 860px;
+}
+/* line 36, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .grid_12 {
+  width: 940px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_1 {
+  padding-left: 80px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_2 {
+  padding-left: 160px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_3 {
+  padding-left: 240px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_4 {
+  padding-left: 320px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_5 {
+  padding-left: 400px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_6 {
+  padding-left: 480px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_7 {
+  padding-left: 560px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_8 {
+  padding-left: 640px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_9 {
+  padding-left: 720px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_10 {
+  padding-left: 800px;
+}
+/* line 44, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .prefix_11 {
+  padding-left: 880px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_1 {
+  padding-right: 80px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_2 {
+  padding-right: 160px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_3 {
+  padding-right: 240px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_4 {
+  padding-right: 320px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_5 {
+  padding-right: 400px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_6 {
+  padding-right: 480px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_7 {
+  padding-right: 560px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_8 {
+  padding-right: 640px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_9 {
+  padding-right: 720px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_10 {
+  padding-right: 800px;
+}
+/* line 52, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .suffix_11 {
+  padding-right: 880px;
+}
+/* line 56, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .alpha {
+  margin-left: 0;
+}
+/* line 58, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_grid.sass */
+.content .omega {
+  margin-right: 0;
+}
