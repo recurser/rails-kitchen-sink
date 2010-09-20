@@ -7,7 +7,6 @@ gem 'haml', '3.0.10'
 gem 'i18n', '0.4.1'
 #gem 'fancy-buttons', '0.5.4'
 gem 'compass', '0.10.5'
-gem 'compass-960-plugin', :require => 'ninesixty'
 gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 
 group :development do
