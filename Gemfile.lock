@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/koppen/hassle.git
+  revision: a08c757bce033cebc7ef8a4a3a831127afcb956a
+  specs:
+    hassle (0.0.1)
+      haml
+      rack
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -160,6 +168,7 @@ DEPENDENCIES
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
   haml (= 3.0.10)
+  hassle!
   i18n (= 0.4.1)
   metric_fu (= 1.5.1)
   rails (= 3.0.0)
