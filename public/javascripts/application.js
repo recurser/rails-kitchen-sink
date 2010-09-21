@@ -1,2 +1,7 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+(function(){
+  var powers;
+  powers = [1, 2, 3, 4].map(function(i) {
+    return i * i;
+  });
+  alert(powers);
+})();

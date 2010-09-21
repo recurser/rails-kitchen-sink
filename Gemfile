@@ -1,7 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'compass', '0.10.2'
-gem 'compass-960-plugin', :require => 'ninesixty'
 gem 'devise', '1.1.2'
 #gem 'fancy-buttons', '0.5.4'
 gem 'haml', '3.0.10'
@@ -15,6 +13,11 @@ group :development do
   gem 'faker', '0.3.1'
   gem 'metric_fu', '1.5.1'
   gem 'rspec-rails', '2.0.0.beta.18'
+  # CSS should be compiled in a pre-commit hook and served statically.
+  gem 'compass', '0.10.2'
+  gem 'compass-960-plugin', :require => 'ninesixty'
+  # Javascript should be compiled in a pre-commit hook and served statically.
+  gem 'bistro_car', '0.2.2'
 end
 
 group :test do

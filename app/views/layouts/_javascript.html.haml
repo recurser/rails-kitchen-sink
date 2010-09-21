@@ -1,0 +1,4 @@
+- if Rails.env.production?
+  = javascript_include_tag 'application'
+- else
+  = coffee_script_bundle
