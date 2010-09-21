@@ -7,6 +7,6 @@ General:
 - Add i18n translation for page titles @done
 - Add devise
 - Add error partial @done
-- Add coffeescript
+- Add coffeescript @done
 - Add CheddarGetter and signup support
 - Add formtastic, formtastic-sass, validatious

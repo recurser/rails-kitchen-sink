@@ -4,7 +4,6 @@ app: {
     
   show_messages: ->
     $("#messages").slideDown('slow').fadeTo(3000, 1).slideUp('slow');
-    #$('#messages').slideDown 'slow', slideUp
     
 }
 
