@@ -1,10 +1,6 @@
 RecursiveRailsStarter::Application.routes.draw do
   
-  devise_for :users do
-    get 'sign_up'     => 'devise/registrations#new' 
-    get 'sign_in'     => 'devise/sessions#new'    
-    get 'sign_out'    => 'devise/sessions#destroy' 
-  end 
+  devise_for :users
 
   get 'pages/home'
   get 'pages/contact'
@@ -14,6 +10,5 @@ RecursiveRailsStarter::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   
   root :to => 'pages#home'
-  
   
 end
