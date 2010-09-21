@@ -1,10 +1,11 @@
-%header
+%header#header
   %nav
     %ul
       %li= link_to t('common.header_link_home'), root_path
       %li= link_to t('common.header_link_about'), about_path
       %li= link_to t('common.header_link_contact'), contact_path
       - if user_signed_in?
+        %li= link_to t('common.header_link_profile'), edit_registration_path(current_user)
         %li= link_to t('common.header_link_sign_out'), destroy_user_session_path
       - else
         %li= link_to t('common.header_link_sign_in'), new_session_path(resource_name)

@@ -9,4 +9,4 @@ General:
 - Add error partial @done
 - Add coffeescript
 - Add CheddarGetter and signup support
-- formtastic, formtastic-sass, validatious
+- Add formtastic, formtastic-sass, validatious

@@ -145,13 +145,13 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/* line 17, ../../app/stylesheets/screen.sass */
+/* line 14, ../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
-/* line 19, ../../app/stylesheets/screen.sass */
+/* line 17, ../../app/stylesheets/common/base.sass */
 .content #header,
 .content #footer {
   display: inline;
@@ -159,7 +159,51 @@ fieldset {
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 22, ../../app/stylesheets/screen.sass */
+/* line 21, ../../app/stylesheets/common/base.sass */
 .content #header, .content #footer {
   width: 940px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 4, ../../app/stylesheets/common/header.sass */
+header {
+  border-bottom: 1px solid #dedede;
+  background-color: white;
+  height: auto;
+  color: #222222;
+  margin-bottom: 20px;
+}
+/* line 11, ../../app/stylesheets/common/header.sass */
+header li {
+  float: left;
+  margin: 0.5em;
+}
+/* line 15, ../../app/stylesheets/common/header.sass */
+header ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 4, ../../app/stylesheets/common/footer.sass */
+footer {
+  border-top: 1px solid #dedede;
+  background-color: white;
+  height: auto;
+  color: #222222;
+  margin-top: 20px;
+}
+/* line 11, ../../app/stylesheets/common/footer.sass */
+footer li {
+  float: left;
+  margin: 0.5em;
+}
+/* line 15, ../../app/stylesheets/common/footer.sass */
+footer ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }

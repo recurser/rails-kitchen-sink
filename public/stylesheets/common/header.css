@@ -1,0 +1,20 @@
+/* line 4, ../../../app/stylesheets/common/header.sass */
+header {
+  border-bottom: 1px solid #dedede;
+  background-color: white;
+  height: auto;
+  color: #222222;
+  margin-bottom: 20px;
+}
+/* line 11, ../../../app/stylesheets/common/header.sass */
+header li {
+  float: left;
+  margin: 0.5em;
+}
+/* line 15, ../../../app/stylesheets/common/header.sass */
+header ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
