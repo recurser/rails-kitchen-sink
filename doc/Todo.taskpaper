@@ -4,8 +4,9 @@ General:
 - add compass/sass @done
 - add default stylesheet
 - Add test examples for page titles
-- Add i18n translation for page titles
-- Add authlogic
-- Add error partial
+- Add i18n translation for page titles @done
+- Add devise
+- Add error partial @done
 - Add coffeescript
 - Add CheddarGetter and signup support
+- formtastic, formtastic-sass, validatious
