@@ -7,10 +7,15 @@
     = csrf_meta_tag 
 
   %body>
-    = render 'layouts/header'
     
     .content
+    
+      = render 'layouts/header'
+    
+      - flash.each do |key, value|
+        .flash{:class => "#{key}"}= value
+        
       = yield
     
-    = render 'layouts/footer'
+      = render 'layouts/footer'
     

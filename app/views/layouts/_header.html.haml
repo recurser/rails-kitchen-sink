@@ -4,4 +4,9 @@
       %li= link_to t('common.header_link_home'), root_path
       %li= link_to t('common.header_link_about'), about_path
       %li= link_to t('common.header_link_contact'), contact_path
+      - if user_signed_in?
+        %li= link_to t('common.header_link_sign_out'), sign_out_path
+      - else
+        %li= link_to t('common.header_link_sign_in'), sign_in_path
+        %li= link_to t('common.header_link_sign_up'), sign_up_path
       

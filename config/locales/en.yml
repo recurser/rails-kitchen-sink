@@ -4,9 +4,13 @@ en:
     header_link_home:         "Home"
     header_link_about:        "About"
     header_link_contact:      "Contact"
+    header_link_sign_up:      "Sign Up"
+    header_link_sign_in:      "Sign In"
+    header_link_sign_out:     "Sign Out"
     footer_copyright:         "Copyright 2010 Recursive Design"
     
   pages:
     title_home:               "Home"
     title_contact:            "Contact"
     title_about:              "About"
+
