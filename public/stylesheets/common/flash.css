@@ -8,8 +8,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  display: none;
 }
-/* line 15, ../../../app/stylesheets/common/flash.sass */
+/* line 16, ../../../app/stylesheets/common/flash.sass */
 #messages .flash {
   margin-left: auto;
   margin-right: auto;

@@ -1,2 +1,11 @@
-powers: [1,2,3,4].map (i) -> i * i
-alert powers
+app: {
+  init: ->
+    app.show_messages()
+    
+  show_messages: ->
+    $("#messages").slideDown('slow').fadeTo(3000, 1).slideUp('slow');
+    #$('#messages').slideDown 'slow', slideUp
+    
+}
+
+$(document).ready app.init
