@@ -8,17 +8,22 @@
 
 +text
 
+body
+  font: 13.34px helvetica, arial, freesans, clean, sans-serif
 
-$ninesixty-columns: 24
+a
+  text-decoration: none
+  color: $link
+  
+  &:visited
+    color: $link_visited
+    text-decoration: none
+  
+  &:hover
+    color: $link_visited
+    text-decoration: underline
+
 
 .content
   +grid-container
   
-  #header,
-  #footer
-    +grid-unit-base
-    
-  #header, #footer
-    +grid-width(24)
-    +alpha
-    +omega

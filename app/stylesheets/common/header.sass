@@ -6,15 +6,28 @@ header
   background-color: $header_bg
   height: auto
   color: $header_text
-  margin-bottom: 20px
+  margin-bottom: 2em
+  height: 3em
   
   li
     float: left
-    margin: 0.5em
+    margin: 0 0.5em
+    line-height: 3em
     
   ul
     width: 100%
     overflow: hidden
     margin: 0
     padding: 0
+    +grid-container
+    
+  a
+    font-size: 1.1em
+    color: $header_link
+  
+    &:visited
+      color: $header_link_visited
+  
+    &:hover
+      color: $header_link_hover
   

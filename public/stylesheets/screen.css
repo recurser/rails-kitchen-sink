@@ -145,46 +145,91 @@ fieldset {
   margin-bottom: 20px;
 }
 
+/* line 11, ../../app/stylesheets/common/base.sass */
+body {
+  font: 13.34px helvetica, arial, freesans, clean, sans-serif;
+}
+
 /* line 14, ../../app/stylesheets/common/base.sass */
+a {
+  text-decoration: none;
+  color: #428edb;
+}
+/* line 18, ../../app/stylesheets/common/base.sass */
+a:visited {
+  color: #428edb;
+  text-decoration: none;
+}
+/* line 22, ../../app/stylesheets/common/base.sass */
+a:hover {
+  color: #428edb;
+  text-decoration: underline;
+}
+
+/* line 26, ../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
-/* line 17, ../../app/stylesheets/common/base.sass */
-.content #header,
-.content #footer {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+
+/* line 5, ../../app/stylesheets/common/flash.sass */
+#messages {
+  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+  color: #222222;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-/* line 21, ../../app/stylesheets/common/base.sass */
-.content #header, .content #footer {
-  width: 940px;
-  margin-left: 0;
-  margin-right: 0;
+/* line 15, ../../app/stylesheets/common/flash.sass */
+#messages .flash {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  line-height: 2.1em;
+  font-size: 1.4em;
 }
 
 /* line 4, ../../app/stylesheets/common/header.sass */
 header {
-  border-bottom: 1px solid #dedede;
-  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #fafafa;
   height: auto;
   color: #222222;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
+  height: 3em;
 }
-/* line 11, ../../app/stylesheets/common/header.sass */
+/* line 12, ../../app/stylesheets/common/header.sass */
 header li {
   float: left;
-  margin: 0.5em;
+  margin: 0 0.5em;
+  line-height: 3em;
 }
-/* line 15, ../../app/stylesheets/common/header.sass */
+/* line 17, ../../app/stylesheets/common/header.sass */
 header ul {
   width: 100%;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+/* line 24, ../../app/stylesheets/common/header.sass */
+header a {
+  font-size: 1.1em;
+  color: #428edb;
+}
+/* line 28, ../../app/stylesheets/common/header.sass */
+header a:visited {
+  color: #428edb;
+}
+/* line 31, ../../app/stylesheets/common/header.sass */
+header a:hover {
+  color: #428edb;
 }
 
 /* line 4, ../../app/stylesheets/common/footer.sass */

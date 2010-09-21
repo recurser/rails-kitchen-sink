@@ -8,12 +8,14 @@
 
   %body>
     
+    - if flash.length > 0
+      #messages
+        - flash.each do |key, value|
+          .flash{:class => "#{key}"}= value
+      
+    = render 'layouts/header'
+    
     .content
-    
-      = render 'layouts/header'
-    
-      - flash.each do |key, value|
-        .flash{:class => "#{key}"}= value
         
       = yield
     

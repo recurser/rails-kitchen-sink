@@ -1,0 +1,19 @@
+/* line 5, ../../../app/stylesheets/common/flash.sass */
+#messages {
+  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+  color: #222222;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 15, ../../../app/stylesheets/common/flash.sass */
+#messages .flash {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  line-height: 2.1em;
+  font-size: 1.4em;
+}
