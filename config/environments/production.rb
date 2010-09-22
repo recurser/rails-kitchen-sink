@@ -49,4 +49,6 @@ RecursiveRailsStarter::Application.configure do
   
   # Don't try and compile SASS on Heroku
   Sass::Plugin.options[:never_update] = true
+  
+  config.action_mailer.default_url_options = { :host => 'recursive-design.com' }
 end
