@@ -259,8 +259,7 @@ footer ul {
   padding: 0;
 }
 
-@import url(mixins.css);
-/* line 6, ../../app/stylesheets/common/forms.sass */
+/* line 5, ../../app/stylesheets/common/forms.sass */
 .form {
   position: relative;
   left: 240px;
