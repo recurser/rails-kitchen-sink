@@ -161,14 +161,22 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../../app/stylesheets/common/base.sass */
+/* line 26, ../../app/stylesheets/common/base.sass */
+hr {
+  height: 1px;
+  display: block;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+/* line 32, ../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 30, ../../app/stylesheets/common/base.sass */
+/* line 35, ../../app/stylesheets/common/base.sass */
 .clear {
   clear: both;
   display: block;
@@ -213,8 +221,9 @@ header li {
   float: left;
   margin: 0 0.5em;
   line-height: 3em;
+  list-style: none;
 }
-/* line 17, ../../app/stylesheets/common/header.sass */
+/* line 18, ../../app/stylesheets/common/header.sass */
 header ul {
   width: 100%;
   overflow: hidden;
@@ -224,16 +233,16 @@ header ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 24, ../../app/stylesheets/common/header.sass */
+/* line 25, ../../app/stylesheets/common/header.sass */
 header a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 28, ../../app/stylesheets/common/header.sass */
+/* line 29, ../../app/stylesheets/common/header.sass */
 header a:visited {
   color: #428edb;
 }
-/* line 31, ../../app/stylesheets/common/header.sass */
+/* line 32, ../../app/stylesheets/common/header.sass */
 header a:hover {
   color: #428edb;
 }
