@@ -6,7 +6,7 @@ gem 'haml', '3.0.10'
 gem 'i18n', '0.4.1'
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'rails', '3.0.0'
-gem 'will_paginate', '3.0.pre'
+gem "will_paginate", :git => "http://github.com/mislav/will_paginate.git", :branch => "rails3"
 
 group :development do
   gem 'annotate-models', '1.0.4'
