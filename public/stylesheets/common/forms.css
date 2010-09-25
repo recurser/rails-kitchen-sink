@@ -1,0 +1,11 @@
+@import url(mixins.css);
+/* line 6, ../../../app/stylesheets/common/forms.sass */
+.form {
+  position: relative;
+  left: 240px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}

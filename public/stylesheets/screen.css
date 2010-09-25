@@ -62,17 +62,17 @@ a img {
   border: none;
 }
 
-/* line 4, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 4, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 body {
   font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
-/* line 6, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 6, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 a:focus {
   outline: 1px dotted invert;
 }
 
-/* line 8, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 8, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 hr {
   border-color: #cccccc;
   border-style: solid;
@@ -81,52 +81,52 @@ hr {
   height: 0;
 }
 
-/* line 14, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 14, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h1 {
   font-size: 25px;
 }
 
-/* line 16, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 16, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h2 {
   font-size: 23px;
 }
 
-/* line 18, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 18, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h3 {
   font-size: 21px;
 }
 
-/* line 20, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 20, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h4 {
   font-size: 19px;
 }
 
-/* line 22, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 22, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h5 {
   font-size: 17px;
 }
 
-/* line 24, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 24, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 h6 {
   font-size: 15px;
 }
 
-/* line 26, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 26, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 ol {
   list-style: decimal;
 }
 
-/* line 28, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 28, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 ul {
   list-style: square;
 }
 
-/* line 30, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 30, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 li {
   margin-left: 30px;
 }
 
-/* line 32, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+/* line 32, ../../../../../../../usr/local/Cellar/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
 p,
 dl,
 hr,
@@ -143,11 +143,6 @@ table,
 address,
 fieldset {
   margin-bottom: 20px;
-}
-
-/* line 11, ../../app/stylesheets/common/base.sass */
-body {
-  font: 13.34px helvetica, arial, freesans, clean, sans-serif;
 }
 
 /* line 14, ../../app/stylesheets/common/base.sass */
@@ -171,6 +166,16 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
+}
+
+/* line 30, ../../app/stylesheets/common/base.sass */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 /* line 5, ../../app/stylesheets/common/flash.sass */
@@ -252,4 +257,16 @@ footer ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+@import url(mixins.css);
+/* line 6, ../../app/stylesheets/common/forms.sass */
+.form {
+  position: relative;
+  left: 240px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
 }

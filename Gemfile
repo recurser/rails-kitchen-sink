@@ -16,7 +16,7 @@ group :development do
   gem 'rspec-rails', '2.0.0.beta.18'
   # CSS should be compiled in a pre-commit hook and served statically.
   gem 'compass', '0.10.2'
-  gem 'compass-960-plugin', :require => 'ninesixty'
+  gem 'compass-960-plugin', '0.10.0', :require => 'ninesixty'
   # Javascript should be compiled in a pre-commit hook and served statically.
   gem 'bistro_car', '0.2.2'
 end
