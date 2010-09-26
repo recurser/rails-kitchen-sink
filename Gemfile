@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'devise', '1.1.2'
 #gem 'fancy-buttons', '0.5.4'
+gem 'formtastic', '1.1.0'
 gem 'haml', '3.0.10'
 gem 'hpricot', '0.8.2'
 gem 'i18n', '0.4.1'
