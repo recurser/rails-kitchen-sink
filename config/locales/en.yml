@@ -30,6 +30,11 @@ en:
         confirm_link: "Change your password"
         ignore_mail_explanation: "If you didn't request a password reset, please ignore this email."
         change_explanation: "Your password won't change until you click the link above and create a new one."
+      unlock_instructions:
+        welcome_message: "Hi %{email}!"
+        lock_explanation: "Your account has been locked due to an excessive amount of unsuccessful sign in attempts."
+        resend_link_explanation: "Click the link below to unlock your account:"
+        resend_link: "Unlock your account"
     passwords:
       new:
         heading: "Forgot your password?"
@@ -46,6 +51,9 @@ en:
         back_link: "Go back"
         cancel_account_confirm_popup: "Are you sure? Click the 'OK' button to cancel your account."
         password_hint: "(leave this blank if you don't want to change it)"
+    unlocks:
+      new:
+        heading: "Resend unlock instructions"
     sessions:
       new:
         heading: "Sign in"
@@ -74,11 +82,14 @@ en:
       sign_in: "Sign in"
       sign_up: "Sign up"
       reset_pass: "Reset my password"
-      resend_confirm: "Resend comfirmation"
+      resend_confirm: "Resend confirmation"
       edit_user: "Update your profile"
       change_password: "Change password"
+      resend_unlock: "Resend instructions"
   
   devise:
+    failure:
+      locked: 'Your account has been locked. Check your email for instructions.'
     registrations:
       signed_up: 'Thanks for signing up! A confirmation has been sent to your email address.'
       updated: 'Your account has been updated.'

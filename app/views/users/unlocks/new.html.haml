@@ -1,10 +1,15 @@
-%h2 Resend unlock instructions
-= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
-  = devise_error_messages!
-  %p
-    = f.label :email
-    %br/
-    = f.text_field :email
-  %p= f.submit "Resend unlock instructions"
+
+.form
+  %h2= t('users.unlocks.new.heading')
   
-= render :partial => "users/shared/links"
+  = semantic_form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
+    = devise_error_messages!
+    - f.inputs do
+      = f.input :email, :as => :string 
+    
+    - f.buttons do    
+      = f.commit_button :resend_unlock
+    
+  = render :partial => "users/shared/links"
+
+.clear
