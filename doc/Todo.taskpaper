@@ -1,7 +1,7 @@
 General:
 - add default stylesheet
 - Add test examples for page titles
-- Add formtastic, formtastic-sass, validatious
+- Add formtastic, formtastic-sass, validatious @done
 - Add layout @done
 - Add header and footer partials @done
 - add compass/sass @done

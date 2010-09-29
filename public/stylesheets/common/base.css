@@ -141,23 +141,23 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/* line 14, ../../../app/stylesheets/common/base.sass */
+/* line 11, ../../../app/stylesheets/common/base.sass */
 a {
   text-decoration: none;
   color: #428edb;
 }
-/* line 18, ../../../app/stylesheets/common/base.sass */
+/* line 15, ../../../app/stylesheets/common/base.sass */
 a:visited {
   color: #428edb;
   text-decoration: none;
 }
-/* line 22, ../../../app/stylesheets/common/base.sass */
+/* line 19, ../../../app/stylesheets/common/base.sass */
 a:hover {
   color: #428edb;
   text-decoration: underline;
 }
 
-/* line 26, ../../../app/stylesheets/common/base.sass */
+/* line 23, ../../../app/stylesheets/common/base.sass */
 hr {
   height: 1px;
   display: block;
@@ -165,14 +165,14 @@ hr {
   border-top: 1px solid #cccccc;
 }
 
-/* line 32, ../../../app/stylesheets/common/base.sass */
+/* line 29, ../../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 35, ../../../app/stylesheets/common/base.sass */
+/* line 32, ../../../app/stylesheets/common/base.sass */
 .clear {
   clear: both;
   display: block;
