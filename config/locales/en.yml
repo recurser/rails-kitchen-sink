@@ -19,6 +19,8 @@ en:
     passwords:
       new:
         heading: "Forgot your password?"
+      edit:
+        heading: "Change your password"
     registrations:
       new:
         heading: "Sign up"
@@ -29,6 +31,10 @@ en:
         cancel_account_link: "Cancel your account"
         back_link: "Go back"
         cancel_account_confirm_popup: "Are you sure? Click the 'OK' button to cancel your account."
+        password_hint: "(leave this blank if you don't want to change it)"
+    confirmations:
+      new:
+        heading: "Resend confirmation instructions"
     sessions:
       new:
         heading: "Sign in"
@@ -52,7 +58,6 @@ en:
     hints:
       user:
         edit:
-          password: "(leave this blank if you don't want to change it)"
           current_password: "(we need your current password to confirm your changes)"
     actions:
       sign_in: "Sign in"
@@ -60,3 +65,4 @@ en:
       reset_pass: "Reset my password"
       resend_confirm: "Resend comfirmation"
       edit_user: "Update your profile"
+      change_password: "Change password"

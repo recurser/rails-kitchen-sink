@@ -1,6 +1,6 @@
 
 .form
-  %h2 Change your password
+  %h2= t('users.passwords.edit.heading')
   
   = semantic_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
     - f.inputs do
@@ -8,6 +8,7 @@
       = f.input :password, :as => :password
       = f.input :password_confirmation, :as => :password 
       
-    = f.buttons
+    - f.buttons do    
+      = f.commit_button :change_password
 
 .clear
