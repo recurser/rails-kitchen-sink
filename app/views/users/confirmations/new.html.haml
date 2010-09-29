@@ -7,8 +7,9 @@
     - f.inputs do
       = f.input :email, :as => :string 
     
-    = f.buttons
+    - f.buttons do    
+      = f.commit_button :resend_confirm
     
-  = render :partial => "devise/shared/links"
+  = render :partial => "users/shared/links"
 
 .clear

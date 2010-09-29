@@ -15,3 +15,36 @@ en:
     title_contact:            "Contact"
     title_about:              "About"
 
+  users:
+    passwords:
+      new:
+        heading: "Forgot your password?"
+    registrations:
+      new:
+        heading: "Sign up"
+      edit:
+        heading: "Edit your profile"
+    sessions:
+      new:
+        heading: "Sign in"
+    shared:
+      _links:
+        sign_in: "Sign in"
+        sign_up: "Sign up"
+        forgot_password: "Forgot your password?"
+        resend_confirm: "Didn't receive confirmation instructions?"
+        unlock: "Didn't receive unlock instructions?"
+
+
+  formtastic:
+    labels:
+      user:
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirm password"
+        remember_me: "Remember me"
+    actions:
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      reset_pass: "Reset my password"
+      resend_confirm: "Resend comfirmation"

@@ -1,13 +1,14 @@
 
 .form
-  %h2 Forgot your password?
+  %h2= t('users.passwords.new.heading')
   
   = semantic_form_for(resource, :as => resource_name, :url => password_path(resource_name)) do |f|
     - f.inputs do
       = f.input :email, :as => :string 
       
-    = f.buttons
+    - f.buttons do    
+      = f.commit_button :reset_pass
     
-  = render :partial => "devise/shared/links"
+  = render :partial => "users/shared/links"
 
 .clear
