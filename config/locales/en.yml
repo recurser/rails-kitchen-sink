@@ -16,6 +16,20 @@ en:
     title_about:              "About"
 
   users:
+    confirmations:
+      new:
+        heading: "Resend confirmation instructions"
+    mailer:
+      confirmation_instructions:
+        welcome_message: "Hi %{email}!"
+        confirm_link_explanation: "Please click the link below to confirm your account:"
+        confirm_link: "Confirm your account"
+      reset_password_instructions:
+        welcome_message: "Hi %{email}!"
+        confirm_link_explanation: "Someone has requested a link to change your password. You you can do this through the link below:"
+        confirm_link: "Change your password"
+        ignore_mail_explanation: "If you didn't request a password reset, please ignore this email."
+        change_explanation: "Your password won't change until you click the link above and create a new one."
     passwords:
       new:
         heading: "Forgot your password?"
@@ -32,9 +46,6 @@ en:
         back_link: "Go back"
         cancel_account_confirm_popup: "Are you sure? Click the 'OK' button to cancel your account."
         password_hint: "(leave this blank if you don't want to change it)"
-    confirmations:
-      new:
-        heading: "Resend confirmation instructions"
     sessions:
       new:
         heading: "Sign in"
@@ -66,3 +77,19 @@ en:
       resend_confirm: "Resend comfirmation"
       edit_user: "Update your profile"
       change_password: "Change password"
+  
+  devise:
+    registrations:
+      signed_up: 'Thanks for signing up! A confirmation has been sent to your email address.'
+      updated: 'Your account has been updated.'
+      destroyed: 'Your account has been cancelled. We hope to see you again soon!'
+    mailer:
+      confirmation_instructions: 
+        subject: 'Confirm your email address'
+      reset_password_instructions: 
+        subject: 'How to reset your password'
+      unlock_instructions: 
+        subject: 'How to unlock your account'
+    sessions:
+      signed_in: 'You are now signed in.'
+      signed_out: 'You are now signed out. Come back soon!'
