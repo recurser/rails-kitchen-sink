@@ -24,6 +24,11 @@ en:
         heading: "Sign up"
       edit:
         heading: "Edit your profile"
+        cancel_account_heading: "Cancel your account"
+        cancel_account_description: "Unhappy with our service?"
+        cancel_account_link: "Cancel your account"
+        back_link: "Go back"
+        cancel_account_confirm_popup: "Are you sure? Click the 'OK' button to cancel your account."
     sessions:
       new:
         heading: "Sign in"
@@ -42,9 +47,16 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirm password"
+        current_password: "Current password"
         remember_me: "Remember me"
+    hints:
+      user:
+        edit:
+          password: "(leave this blank if you don't want to change it)"
+          current_password: "(we need your current password to confirm your changes)"
     actions:
       sign_in: "Sign in"
       sign_up: "Sign up"
       reset_pass: "Reset my password"
       resend_confirm: "Resend comfirmation"
+      edit_user: "Update your profile"
