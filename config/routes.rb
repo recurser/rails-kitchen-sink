@@ -1,6 +1,8 @@
 RecursiveRailsStarter::Application.routes.draw do
   
-  devise_for :users
+  resources :users
+
+  devise_for :users, :path => '/account'
 
   get 'pages/home'
   get 'pages/contact'
