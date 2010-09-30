@@ -4,6 +4,8 @@
   
   = semantic_form_for @user do |f|
     
+    = render 'shared/error_messages', :object => @user
+    
     - f.inputs do
       = f.input :email, :as => :string 
       = f.input :password, :as => :password 
