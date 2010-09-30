@@ -15,7 +15,7 @@ en:
     title_contact:            "Contact"
     title_about:              "About"
 
-  users:
+  devise:
     confirmations:
       new:
         heading: "Resend confirmation instructions"
@@ -87,20 +87,3 @@ en:
       change_password: "Change password"
       resend_unlock: "Resend instructions"
   
-  devise:
-    failure:
-      locked: 'Your account has been locked. Check your email for instructions.'
-    registrations:
-      signed_up: 'Thanks for signing up! A confirmation has been sent to your email address.'
-      updated: 'Your account has been updated.'
-      destroyed: 'Your account has been cancelled. We hope to see you again soon!'
-    mailer:
-      confirmation_instructions: 
-        subject: 'Confirm your email address'
-      reset_password_instructions: 
-        subject: 'How to reset your password'
-      unlock_instructions: 
-        subject: 'How to unlock your account'
-    sessions:
-      signed_in: 'You are now signed in.'
-      signed_out: 'You are now signed out. Come back soon!'

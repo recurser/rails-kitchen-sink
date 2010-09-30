@@ -1,6 +1,6 @@
 
 .form
-  %h2= t('users.unlocks.new.heading')
+  %h2= t('devise.unlocks.new.heading')
   
   = semantic_form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
   

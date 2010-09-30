@@ -1,6 +1,6 @@
 
 .form
-  %h2= t('users.registrations.edit.heading')
+  %h2= t('devise.registrations.edit.heading')
   
   = semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
   
@@ -8,17 +8,17 @@
     
     - f.inputs do
       = f.input :email, :as => :string 
-      = f.input :password, :as => :password, :hint => t('users.registrations.edit.password_hint')
+      = f.input :password, :as => :password, :hint => t('devise.registrations.edit.password_hint')
       = f.input :password_confirmation, :as => :password
       = f.input :current_password, :as => :password
       
     - f.buttons do    
       = f.commit_button :edit_user
     
-  %h3= t('users.registrations.edit.cancel_account_heading')
+  %h3= t('devise.registrations.edit.cancel_account_heading')
   %p
-    = t('users.registrations.edit.cancel_account_description') 
-    #{link_to t('users.registrations.edit.cancel_account_link'), registration_path(resource_name), :confirm => t('users.registrations.edit.cancel_account_confirm_popup'), :method => :delete}
-  = link_to t('users.registrations.edit.back_link'), :back
+    = t('devise.registrations.edit.cancel_account_description') 
+    #{link_to t('devise.registrations.edit.cancel_account_link'), registration_path(resource_name), :confirm => t('devise.registrations.edit.cancel_account_confirm_popup'), :method => :delete}
+  = link_to t('devise.registrations.edit.back_link'), :back
 
 .clear

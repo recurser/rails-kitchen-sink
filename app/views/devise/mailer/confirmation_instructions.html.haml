@@ -1,3 +1,3 @@
-%p= t('users.mailer.confirmation_instructions.welcome_message', :email => @resource.email)
-%p= t('users.mailer.confirmation_instructions.confirm_link_explanation')
-%p= link_to t('users.mailer.confirmation_instructions.confirm_link'), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
+%p= t('devise.mailer.confirmation_instructions.welcome_message', :email => @resource.email)
+%p= t('devise.mailer.confirmation_instructions.confirm_link_explanation')
+%p= link_to t('devise.mailer.confirmation_instructions.confirm_link'), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
