@@ -1,2 +1,11 @@
-%h1 Users#index
-%p Find me in app/views/users/index.html.haml
+
+%h2= t('users.index.heading')
+
+%ul.users
+
+  = will_paginate
+  
+  = render @users
+  
+  = will_paginate
+  
