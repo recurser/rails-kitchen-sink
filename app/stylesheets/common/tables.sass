@@ -1,15 +1,24 @@
 
-table.list 
-  border-collapse: collapse
+@import 960/grid
+@import colors
+
+.list 
+  +grid-move-base
+  +grid-push(3, $ninesixty-columns)
+  +grid(6, $ninesixty-columns)  
   
-  td, th
-    border: 1px solid $td_border
-    padding: 0.5em
+  table
+    border-collapse: collapse
+    width: 100%
+  
+    td, th
+      border: 1px solid $td_border
+      padding: 0.5em
     
-  th
-    color: $th_text
-    background-color: $th_bg
+    th
+      color: $th_text
+      background-color: $th_bg
     
-  td
-    color: $td_text
-    background-color: $td_bg
+    td
+      color: $td_text
+      background-color: $td_bg

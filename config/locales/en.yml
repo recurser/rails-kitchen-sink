@@ -1,6 +1,7 @@
 en:
   common:
     title_prefix:             "Recursive"
+    or:                       "or"
     header_link:
         home:                 "Home"
         about:                "About"
@@ -21,9 +22,13 @@ en:
     title_index:              "Manage Users"
     index:
       heading:                "All Users"
+      create_user_link:       "Create a new user"
       user_list:
         email_heading:        "Email"
         role_heading:         "Roles"
+    new:
+      heading:                "Create a new user"
+      cancel_link:            "cancel"
     _user:
       edit_link:              "edit"
       delete_link:            "delete"

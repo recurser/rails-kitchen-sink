@@ -634,22 +634,33 @@ header a:hover {
   color: #428edb;
 }
 
-/* line 2, ../../app/stylesheets/common/tables.sass */
-table.list {
-  border-collapse: collapse;
-}
 /* line 5, ../../app/stylesheets/common/tables.sass */
-table.list td, table.list th {
+.list {
+  position: relative;
+  left: 240px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 10, ../../app/stylesheets/common/tables.sass */
+.list table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 14, ../../app/stylesheets/common/tables.sass */
+.list table td, .list table th {
   border: 1px solid #d5dae3;
   padding: 0.5em;
 }
-/* line 9, ../../app/stylesheets/common/tables.sass */
-table.list th {
+/* line 18, ../../app/stylesheets/common/tables.sass */
+.list table th {
   color: #222222;
   background-color: #eef3fd;
 }
-/* line 13, ../../app/stylesheets/common/tables.sass */
-table.list td {
+/* line 22, ../../app/stylesheets/common/tables.sass */
+.list table td {
   color: #222222;
   background-color: white;
 }

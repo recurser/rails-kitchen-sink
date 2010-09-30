@@ -1,16 +1,21 @@
 
-%h2= t('users.index.heading')
+.list
 
+  %h2= t('users.index.heading')
   
-= will_paginate
+  %p= link_to_if(can?(:create, User), t('users.index.create_user_link'), new_user_path) {}
   
-%table.list
-  %tr
-    %th= t('users.index.user_list.email_heading')
-    %th= t('users.index.user_list.role_heading')
-    %th
-    %th
-  = render @users
+  = will_paginate
   
-= will_paginate
+  %table
+    %tr
+      %th= t('users.index.user_list.email_heading')
+      %th= t('users.index.user_list.role_heading')
+      %th
+      %th
+    = render @users
+  
+  = will_paginate
+  
+.clear
   
