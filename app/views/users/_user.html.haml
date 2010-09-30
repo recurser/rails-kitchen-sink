@@ -1,3 +1,6 @@
-%li
-  = link_to user.email, user
-  = link_to "delete", user, :method => :delete, :confirm => "You sure?", :title => "Delete #{user.email}" 
+
+%tr
+  %td= link_to_if(can?(:read, User), "#{user.email}", user_path(user.id)) {}
+  %td= user.roles.collect{|r| r.name}.join(', ')
+  %td= link_to_if(can?(:edit, User), t('users._user.edit_link'), edit_user_path(user.id)) {}
+  %td= link_to_if(can?(:delete, user), t('users._user.delete_link'), user, :confirm => "Are you sure?", :method => :delete) {}

@@ -1,13 +1,15 @@
 %header#header
   %nav
     %ul
-      %li= link_to t('common.header_link_home'), root_path
-      %li= link_to t('common.header_link_about'), about_path
-      %li= link_to t('common.header_link_contact'), contact_path
+      %li= link_to t('common.header_link.home'), root_path
+      %li= link_to t('common.header_link.about'), about_path
+      %li= link_to t('common.header_link.contact'), contact_path
       - if user_signed_in?
-        %li= link_to t('common.header_link_profile'), edit_user_registration_path
-        %li= link_to t('common.header_link_sign_out'), destroy_user_session_path
+        - if can?(:read, User)
+          %li= link_to t('common.header_link.users'), users_path
+        %li= link_to t('common.header_link.profile'), edit_user_registration_path
+        %li= link_to t('common.header_link.sign_out'), destroy_user_session_path
       - else
-        %li= link_to t('common.header_link_sign_in'), new_user_session_path
-        %li= link_to t('common.header_link_sign_up'), new_user_registration_path
+        %li= link_to t('common.header_link.sign_in'), new_user_session_path
+        %li= link_to t('common.header_link.sign_up'), new_user_registration_path
       

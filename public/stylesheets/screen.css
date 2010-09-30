@@ -527,46 +527,6 @@ hr {
   color: #993333;
 }
 
-/* line 5, ../../app/stylesheets/common/header.sass */
-header {
-  border-bottom: 1px solid #dfdfdf;
-  background-color: #fafafa;
-  height: auto;
-  color: #222222;
-  margin-bottom: 2em;
-  height: 3em;
-}
-/* line 13, ../../app/stylesheets/common/header.sass */
-header li {
-  float: left;
-  margin: 0 0.5em;
-  line-height: 3em;
-  list-style: none;
-}
-/* line 19, ../../app/stylesheets/common/header.sass */
-header ul {
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-/* line 26, ../../app/stylesheets/common/header.sass */
-header a {
-  font-size: 1.1em;
-  color: #428edb;
-}
-/* line 30, ../../app/stylesheets/common/header.sass */
-header a:visited {
-  color: #428edb;
-}
-/* line 33, ../../app/stylesheets/common/header.sass */
-header a:hover {
-  color: #428edb;
-}
-
 /* line 4, ../../app/stylesheets/common/footer.sass */
 footer {
   border-top: 1px solid #dedede;
@@ -632,4 +592,64 @@ footer ul {
 .form #error_explanation h2 {
   font-size: 1.2em;
   margin: 0;
+}
+
+/* line 5, ../../app/stylesheets/common/header.sass */
+header {
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #fafafa;
+  height: auto;
+  color: #222222;
+  margin-bottom: 2em;
+  height: 3em;
+}
+/* line 13, ../../app/stylesheets/common/header.sass */
+header li {
+  float: left;
+  margin: 0 0.5em;
+  line-height: 3em;
+  list-style: none;
+}
+/* line 19, ../../app/stylesheets/common/header.sass */
+header ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+/* line 26, ../../app/stylesheets/common/header.sass */
+header a {
+  font-size: 1.1em;
+  color: #428edb;
+}
+/* line 30, ../../app/stylesheets/common/header.sass */
+header a:visited {
+  color: #428edb;
+}
+/* line 33, ../../app/stylesheets/common/header.sass */
+header a:hover {
+  color: #428edb;
+}
+
+/* line 2, ../../app/stylesheets/common/tables.sass */
+table.list {
+  border-collapse: collapse;
+}
+/* line 5, ../../app/stylesheets/common/tables.sass */
+table.list td, table.list th {
+  border: 1px solid #d5dae3;
+  padding: 0.5em;
+}
+/* line 9, ../../app/stylesheets/common/tables.sass */
+table.list th {
+  color: #222222;
+  background-color: #eef3fd;
+}
+/* line 13, ../../app/stylesheets/common/tables.sass */
+table.list td {
+  color: #222222;
+  background-color: white;
 }

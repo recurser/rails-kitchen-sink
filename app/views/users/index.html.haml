@@ -1,11 +1,16 @@
 
 %h2= t('users.index.heading')
 
-%ul.users
-
-  = will_paginate
   
+= will_paginate
+  
+%table.list
+  %tr
+    %th= t('users.index.user_list.email_heading')
+    %th= t('users.index.user_list.role_heading')
+    %th
+    %th
   = render @users
   
-  = will_paginate
+= will_paginate
   

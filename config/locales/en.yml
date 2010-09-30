@@ -1,19 +1,32 @@
 en:
   common:
     title_prefix:             "Recursive"
-    header_link_home:         "Home"
-    header_link_about:        "About"
-    header_link_contact:      "Contact"
-    "header_link_profile":    "Profile"
-    header_link_sign_up:      "Sign Up"
-    header_link_sign_in:      "Sign In"
-    header_link_sign_out:     "Sign Out"
+    header_link:
+        home:                 "Home"
+        about:                "About"
+        contact:              "Contact"
+        users:                "Users"
+        profile:              "Profile"
+        sign_up:              "Sign Up"
+        sign_in:              "Sign In"
+        sign_out:             "Sign Out"
     footer_copyright:         "Copyright 2010 Recursive Design"
     
   pages:
     title_home:               "Home"
     title_contact:            "Contact"
     title_about:              "About"
+    
+  users:
+    title_index:              "Manage Users"
+    index:
+      heading:                "All Users"
+      user_list:
+        email_heading:        "Email"
+        role_heading:         "Roles"
+    _user:
+      edit_link:              "edit"
+      delete_link:            "delete"
 
   devise:
     confirmations:
