@@ -19,3 +19,7 @@
   font-size: 1.4em;
   text-align: center;
 }
+/* line 22, ../../../app/stylesheets/common/flash.sass */
+#messages .flash.alert {
+  color: #993333;
+}

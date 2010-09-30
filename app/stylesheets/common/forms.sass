@@ -7,23 +7,24 @@
     +grid-push(3, $ninesixty-columns)
     +grid(6, $ninesixty-columns)  
     
-    // Over-ride formtastic overflow:auto, which is ugly in firefox.
     .formtastic fieldset ol li
+        // Over-ride formtastic overflow:auto, which is ugly in firefox.
         overflow: hidden
         
+        // Float inline errors to the right of inputs.
         p.inline-errors
             float: left
             padding: 0 0.5em
             margin: 0 0 0 0.5em
             font-size: 0.9em
             background-color: $error_bg
-            color: $error_border
-            border: 1px solid $inline_error_border
+            color: $error_text
+            border: 1px solid $error_border
         
         &.error input
             float: left
         
-        // Make text inputs match password input width
+        // Make text inputs match password input width.
         &.string input,
         &.numeric input
             max-width: 13em
