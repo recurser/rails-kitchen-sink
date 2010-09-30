@@ -527,7 +527,7 @@ hr {
   color: #993333;
 }
 
-/* line 4, ../../app/stylesheets/common/header.sass */
+/* line 5, ../../app/stylesheets/common/header.sass */
 header {
   border-bottom: 1px solid #dfdfdf;
   background-color: #fafafa;
@@ -536,14 +536,14 @@ header {
   margin-bottom: 2em;
   height: 3em;
 }
-/* line 12, ../../app/stylesheets/common/header.sass */
+/* line 13, ../../app/stylesheets/common/header.sass */
 header li {
   float: left;
   margin: 0 0.5em;
   line-height: 3em;
   list-style: none;
 }
-/* line 18, ../../app/stylesheets/common/header.sass */
+/* line 19, ../../app/stylesheets/common/header.sass */
 header ul {
   width: 100%;
   overflow: hidden;
@@ -553,16 +553,16 @@ header ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 25, ../../app/stylesheets/common/header.sass */
+/* line 26, ../../app/stylesheets/common/header.sass */
 header a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 29, ../../app/stylesheets/common/header.sass */
+/* line 30, ../../app/stylesheets/common/header.sass */
 header a:visited {
   color: #428edb;
 }
-/* line 32, ../../app/stylesheets/common/header.sass */
+/* line 33, ../../app/stylesheets/common/header.sass */
 header a:hover {
   color: #428edb;
 }
