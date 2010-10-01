@@ -1,2 +1,47 @@
-%h1 Users#show
-%p Find me in app/views/users/show.html.haml
+
+.list
+
+  %h2= t('users.show.heading', :email => @user.email)
+  
+  %p
+    = link_to_if(can?(:edit, @user), t('users.show.edit_user_link'), edit_user_path(@user.id)) {} 
+    = t('common.or')
+    = link_to_if(can?(:read, @user), t('users.show.all_users_link'), users_path) {} 
+  
+  %table
+    %tr
+      %th= t('users.show.user_detail.email_heading')
+      %td= @user.email
+    %tr
+      %th= t('users.show.user_detail.role_heading')
+      %td= @user.roles.collect{|r| r.name}.join(', ')
+    %tr
+      %th= t('users.show.user_detail.sign_in_count_heading')
+      %td= @user.sign_in_count
+    %tr
+      %th= t('users.show.user_detail.current_sign_in_at_heading')
+      %td= @user.current_sign_in_at
+    %tr
+      %th= t('users.show.user_detail.last_sign_in_at_heading')
+      %td= @user.last_sign_in_at
+    %tr
+      %th= t('users.show.user_detail.current_sign_in_ip_heading')
+      %td= @user.current_sign_in_ip
+    %tr
+      %th= t('users.show.user_detail.last_sign_in_ip_heading')
+      %td= @user.last_sign_in_ip
+    %tr
+      %th= t('users.show.user_detail.failed_attempts_heading')
+      %td= @user.failed_attempts
+    %tr
+      %th= t('users.show.user_detail.created_at_heading')
+      %td= @user.created_at
+    %tr
+      %th= t('users.show.user_detail.updated_at_heading')
+      %td= @user.updated_at
+    %tr
+      %th= t('users.show.user_detail.locked_at_heading')
+      %td= @user.locked_at
+  
+.clear
+  

@@ -1,6 +1,11 @@
 
 .form
-  %h2= t('users.edit.heading')
+  %h2= t('users.edit.heading', :email => @user.email)
+  
+  %p
+    = link_to_if(can?(:delete, @user), t('users.edit.delete_user_link'), @user, :confirm => t('users.edit.delete_user_confirm_popup'), :method => :delete) {}
+    = t('common.or')
+    = link_to_if(can?(:read, @user), t('users.edit.all_users_link'), users_path) {} 
   
   = semantic_form_for @user do |f|
     
