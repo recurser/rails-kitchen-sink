@@ -3,22 +3,24 @@
 @import colors
 
 #messages
-  background-color: $body_bg
-  border-bottom: 1px solid $header_border
-  color: $text
-  height: 3em
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
   display: none
   
   .flash
-    +grid-container
-    line-height: 2.1em
+    background-color: $body_bg
+    border-bottom: 1px solid $header_border
+    color: $text
+    line-height: 2em
     font-size: 1.4em
     text-align: center
+    width: 100%
     
     &.alert
+      background-color: $error_bg
+      border-bottom: 1px solid $error_border
       color: $error_text
+    
+    &.notice
+      background-color: $notice_bg
+      border-bottom: 1px solid $notice_border
+      color: $notice_text
   
