@@ -20,12 +20,16 @@ en:
     
   users:
     title_index:                  "Manage Users"
+    title_edit:                   "Edit User"
+    title_new:                    "New User"
     index:
       heading:                    "All Users"
       create_user_link:           "Create a new user"
       user_list:
         email_heading:            "Email"
         role_heading:             "Roles"
+    edit:
+      heading:                    "Edit User"
     new:
       heading:                    "Create a new user"
       cancel_link:                "cancel"

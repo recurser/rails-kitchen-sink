@@ -559,11 +559,13 @@ footer ul {
   width: 460px;
 }
 /* line 10, ../../app/stylesheets/common/forms.sass */
-.form .formtastic fieldset ol li {
+.form .formtastic fieldset ol li,
+.form .formtastic fieldset ol li fieldset {
   overflow: hidden;
 }
-/* line 15, ../../app/stylesheets/common/forms.sass */
-.form .formtastic fieldset ol li p.inline-errors {
+/* line 16, ../../app/stylesheets/common/forms.sass */
+.form .formtastic fieldset ol li p.inline-errors,
+.form .formtastic fieldset ol li fieldset p.inline-errors {
   float: left;
   padding: 0 0.5em;
   margin: 0 0 0 0.5em;
@@ -572,15 +574,18 @@ footer ul {
   color: #993333;
   border: 1px solid #993333;
 }
-/* line 24, ../../app/stylesheets/common/forms.sass */
-.form .formtastic fieldset ol li.error input {
+/* line 25, ../../app/stylesheets/common/forms.sass */
+.form .formtastic fieldset ol li.error input,
+.form .formtastic fieldset ol li fieldset.error input {
   float: left;
 }
-/* line 28, ../../app/stylesheets/common/forms.sass */
-.form .formtastic fieldset ol li.string input, .form .formtastic fieldset ol li.numeric input {
+/* line 29, ../../app/stylesheets/common/forms.sass */
+.form .formtastic fieldset ol li.string input, .form .formtastic fieldset ol li.numeric input,
+.form .formtastic fieldset ol li fieldset.string input,
+.form .formtastic fieldset ol li fieldset.numeric input {
   max-width: 13em;
 }
-/* line 32, ../../app/stylesheets/common/forms.sass */
+/* line 33, ../../app/stylesheets/common/forms.sass */
 .form #error_explanation {
   background-color: #ffcccc;
   color: #993333;
@@ -588,7 +593,7 @@ footer ul {
   padding: 0.5em;
   margin: 0 auto 1em auto;
 }
-/* line 39, ../../app/stylesheets/common/forms.sass */
+/* line 40, ../../app/stylesheets/common/forms.sass */
 .form #error_explanation h2 {
   font-size: 1.2em;
   margin: 0;
