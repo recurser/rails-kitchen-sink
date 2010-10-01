@@ -9,3 +9,9 @@ General:
 - Add devise @done
 - Add error partial @done
 - Add coffeescript @done
+
+Problems:
+- All user info (encrypted pass etc) available in users ajax view
+- Can't update user password in user edit page, get an error
+- mails the email address when admin creates a new user
+- Regular 'user' role should be compulsory (ideally not even visible)
