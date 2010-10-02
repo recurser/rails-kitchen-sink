@@ -31,8 +31,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
  
     if @user.save
+      flash[:notice] = t 'users.flash.user_created', :email => @user.email
       # Can't mass-assign role_ids - want to protect this from regular users.
       @user.role_ids = params[:user][:role_ids]
+      
       respond_to do |format|
         format.json { render :json => @user.to_json, :status => 200 }
         format.xml  { head :ok }
@@ -76,10 +78,9 @@ class UsersController < ApplicationController
   
   
   def update
+    # Don't try to update the password if none has been provided.
     if params[:user][:password].blank?
-      [:password,:password_confirmation,:current_password].collect{|p| params[:user].delete(p) }
-    else
-      @user.errors[:base] << "The password you entered is incorrect" unless @user.valid_password?(params[:user][:current_password])
+      [:password, :password_confirmation].collect{|p| params[:user].delete(p) }
     end
  
     respond_to do |format|
@@ -88,12 +89,12 @@ class UsersController < ApplicationController
         # Can't mass-assign role_ids - want to protect this from regular users.
         @user.role_ids = params[:user][:role_ids]
       
-        flash[:notice] = "Your account has been updated"
+        flash[:notice] = t 'users.flash.user_updated', :email => @user.email
         format.json { render :json => @user.to_json, :status => 200 }
         format.xml  { head :ok }
         format.html { render :action => :edit }
       else
-        format.json { render :text => "Could not update user", :status => :unprocessable_entity } #placeholder
+        format.json { render :text => "Could not update user", :status => :unprocessable_entity }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
         format.html { render :action => :edit, :status => :unprocessable_entity }
       end
@@ -106,6 +107,7 @@ class UsersController < ApplicationController
   
   def destroy
     @title = 'users.title_destroy'
+    flash[:notice] = t 'users.flash.user_deleted', :email => @user.email
     @user.destroy
  
     respond_to do |format|

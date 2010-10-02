@@ -7,7 +7,7 @@
     = t('common.or')
     = link_to_if(can?(:read, @user), t('users.edit.all_users_link'), users_path) {} 
   
-  = semantic_form_for @user do |f|
+  = semantic_form_for(@user) do |f|
     
     = render 'shared/error_messages', :object => @user
     
