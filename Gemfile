@@ -12,14 +12,14 @@ gem 'will_paginate',        :git => 'http://github.com/mislav/will_paginate.git'
 
 group :development do
   gem 'annotate-models',    '1.0.4'
-  gem 'faker',              '0.3.1'
-  gem 'metric_fu',          '1.5.1'
-  gem 'rspec-rails',        '2.0.0.beta.18'
+  # Javascript should be compiled in a pre-commit hook and served statically.
+  gem 'bistro_car',         '0.2.2'
   # CSS should be compiled in a pre-commit hook and served statically.
   gem 'compass',            '0.10.2'
   gem 'compass-960-plugin', '0.10.0', :require => 'ninesixty'
-  # Javascript should be compiled in a pre-commit hook and served statically.
-  gem 'bistro_car',         '0.2.2'
+  gem 'faker',              '0.3.1'
+  gem 'metric_fu',          '1.5.1'
+  gem 'rspec-rails',        '2.0.0.beta.18'
 end
 
 group :test do
