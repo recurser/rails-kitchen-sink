@@ -20,11 +20,12 @@ group :development do
   gem 'faker',              '0.3.1'
   gem 'jammit',             '0.5.3'
   gem 'metric_fu',          '1.5.1'
-  gem 'rspec-rails',        '2.0.0.beta.18'
+  gem 'rspec-rails',        '2.0.0.beta.22'
 end
 
 group :test do
   gem 'factory_girl_rails', '1.0'
-  gem 'rspec',              '2.0.0.beta.18'
+  gem 'rspec',              '2.0.0.beta.22'
   gem 'spork',              '0.8.4'
+  gem 'webrat',             '0.7.1'
 end

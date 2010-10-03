@@ -1,5 +1,5 @@
 
-- if Rails.env.production?
-  = stylesheet_link_tag '/assets/common'
-- else
+- if Rails.env.development?
   = stylesheet_link_tag 'screen'
+- else
+  = stylesheet_link_tag '/assets/common'

@@ -1,6 +1,6 @@
 
-- if Rails.env.production?
-  = javascript_include_tag '/assets/common'
-- else
+- if Rails.env.development?
   = javascript_include_tag 'jquery', 'rails'
   = coffee_script_bundle
+- else
+  = javascript_include_tag '/assets/common'
