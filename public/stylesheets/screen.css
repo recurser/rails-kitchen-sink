@@ -576,17 +576,22 @@ footer ul {
   border: 1px solid #993333;
 }
 /* line 25, ../../app/stylesheets/common/forms.sass */
+.form .formtastic fieldset ol li p.inline-hints,
+.form .formtastic fieldset ol li fieldset p.inline-hints {
+  float: left;
+}
+/* line 28, ../../app/stylesheets/common/forms.sass */
 .form .formtastic fieldset ol li.error input,
 .form .formtastic fieldset ol li fieldset.error input {
   float: left;
 }
-/* line 29, ../../app/stylesheets/common/forms.sass */
+/* line 32, ../../app/stylesheets/common/forms.sass */
 .form .formtastic fieldset ol li.string input, .form .formtastic fieldset ol li.numeric input,
 .form .formtastic fieldset ol li fieldset.string input,
 .form .formtastic fieldset ol li fieldset.numeric input {
   max-width: 13em;
 }
-/* line 33, ../../app/stylesheets/common/forms.sass */
+/* line 36, ../../app/stylesheets/common/forms.sass */
 .form #error_explanation {
   background-color: #ffcccc;
   color: #993333;
@@ -594,7 +599,7 @@ footer ul {
   padding: 0.5em;
   margin: 0 auto 1em auto;
 }
-/* line 40, ../../app/stylesheets/common/forms.sass */
+/* line 43, ../../app/stylesheets/common/forms.sass */
 .form #error_explanation h2 {
   font-size: 1.2em;
   margin: 0;

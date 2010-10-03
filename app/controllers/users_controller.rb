@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_filter :get_user, :only => [:index, :new, :edit]
   before_filter :accessible_roles, :only => [:new, :edit, :show, :update, :create]
+  
   load_and_authorize_resource
- 
  
   def index
     @title = 'users.title_index'
@@ -17,7 +17,6 @@ class UsersController < ApplicationController
   
   def new
     @title = 'users.title_new'
-    @roles = accessible_roles
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
@@ -68,7 +67,6 @@ class UsersController < ApplicationController
   
   def edit
     @title = 'users.title_edit'
-    @roles = accessible_roles
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
