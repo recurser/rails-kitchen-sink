@@ -2,6 +2,9 @@ class User < ActiveRecord::Base
   
   has_and_belongs_to_many :roles
   
+  # Sort users by email by default.
+  default_scope :order => 'email ASC'
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable and :timeoutable
   devise :database_authenticatable, :registerable, :confirmable, :recoverable, 
@@ -11,7 +14,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :confirmed_at
     
   def role?(role)
-    return !!Role.by_name(role)
+    return !!self.roles.find_by_name(role.to_s.camelize)
   end
   
   # Make sure all users have at least the :user role.

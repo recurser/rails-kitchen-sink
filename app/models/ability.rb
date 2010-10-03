@@ -8,9 +8,7 @@ class Ability
     if user.role? :admin
       can :manage, :all
     elsif user.role? :user
-      can :manage, User do |user|
-        product.try(:id) == user.id
-      end
+      
     end
   end
   
