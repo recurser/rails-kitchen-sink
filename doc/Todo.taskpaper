@@ -1,4 +1,10 @@
 General:
+- Put error msgs before hints in forms
+- Add real contact page
+- Fill in Home and About pages with real info
+- Add links to the project page
+- Add lock checkbox for user edit
+- Add html5boilerplate
 - Add test examples for page titles
 - add default stylesheet @done
 - Add formtastic, formtastic-sass, validatious @done
@@ -9,9 +15,7 @@ General:
 - Add devise @done
 - Add error partial @done
 - Add coffeescript @done
-- Add lock checkbox for user edit
-- Add html5boilerplate
-- Bundle javascript
+- Bundle javascript @done
 
 Problems:
 - All user info (encrypted pass etc) available in users ajax view @done
