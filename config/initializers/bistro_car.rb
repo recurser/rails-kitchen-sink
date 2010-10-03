@@ -1,0 +1,1 @@
+BistroCar.minify = true

@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'asset_packager',       '0.2.0'
 gem 'cancan',               '1.3.4'
 gem 'devise',               '1.1.3'
 gem 'formtastic',           '1.1.0'
