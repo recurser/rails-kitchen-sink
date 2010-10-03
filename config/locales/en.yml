@@ -39,6 +39,7 @@ en:
       delete_user_link:               "Delete this user"
       all_users_link:                 "view all users"
       delete_user_confirm_popup:      "Are you sure? Click the 'OK' button to delete this user."
+      password_hint:                  "(leave this blank if you don't want to change it)"
     new:
       heading:                        "Create a new user"
       cancel_link:                    "cancel"

@@ -13,7 +13,7 @@
     
     = f.inputs do
       = f.input :email, :as => :string 
-      = f.input :password, :as => :password 
+      = f.input :password, :as => :password, :hint => t('users.edit.password_hint')
       = f.input :password_confirmation, :as => :password 
       = f.input :roles, :as => :check_boxes, :collection => @roles
       
