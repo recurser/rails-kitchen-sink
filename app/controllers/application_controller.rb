@@ -9,7 +9,8 @@ class ApplicationController < ActionController::Base
   # Get roles accessible by the current user
   #----------------------------------------------------
   def accessible_roles
-    @accessible_roles = Role.accessible_by(current_ability, :read)
+    # Don't display user role - it gets added automatically and should be transparent to the system.
+    @accessible_roles = Role.accessible_by(current_ability, :read) - [Role.by_name(:user)]
   end
  
   # Make the current user object available to views
