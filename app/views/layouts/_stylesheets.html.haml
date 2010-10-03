@@ -1,1 +1,5 @@
-= stylesheet_link_tag 'screen'
+
+- if Rails.env.production?
+  = stylesheet_link_tag '/assets/workspace'
+- else
+  = stylesheet_link_tag 'screen'
