@@ -1,11 +1,11 @@
 embed_assets: off
 
 javascripts:
-  workspace:
+  common:
     - public/javascripts/jquery.js
     - public/javascripts/rails.js
     - public/javascripts/application.js
 
 stylesheets:
-  workspace:
+  common:
     - public/stylesheets/screen.css
