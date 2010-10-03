@@ -11,7 +11,19 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :confirmed_at
     
   def role?(role)
-    return !!self.roles.find_by_name(role.to_s.camelize)
+    return !!Role.by_name(role)
+  end
+  
+  # Make sure everyone always has at least the :user role.
+  def role_ids=(val)
+    logger.debug '================================'
+    logger.debug val
+    user_role = Role.by_name(:user)
+    val << user_role.id unless val.include? user_role.id
+    @role_ids = val
+    logger.debug val
+    logger.debug '================================'
+    self.save
   end
   
 end

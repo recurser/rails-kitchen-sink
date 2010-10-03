@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'cancan',               '1.3.4'
-gem 'devise',               '1.1.2'
+gem 'devise',               '1.1.3'
 gem 'formtastic',           '1.1.0'
-gem 'haml',                 '3.0.10'
+gem 'haml',                 '3.0.18'
 gem 'hpricot',              '0.8.2'
 gem 'i18n',                 '0.4.1'
 gem 'sqlite3-ruby',         '1.2.5', :require => 'sqlite3'

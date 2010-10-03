@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   
   def new
     @title = 'users.title_new'
-    @roles = Role.accessible_by(current_ability, :index)
+    @roles = accessible_roles
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
@@ -68,7 +68,7 @@ class UsersController < ApplicationController
   
   def edit
     @title = 'users.title_edit'
-    @roles = Role.accessible_by(current_ability, :index)
+    @roles = accessible_roles
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
