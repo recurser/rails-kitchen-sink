@@ -6,3 +6,5 @@ Gemfile.lock
 log/*.log
 scratch_directory/*
 tmp/**/*
+tmp/*.json
+

@@ -1,3 +1,5 @@
+# Models roles used for authorizing users and limiting access to
+# certain parts of the application.
 class Role < ActiveRecord::Base
   
   has_and_belongs_to_many :users
