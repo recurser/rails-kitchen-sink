@@ -7,7 +7,8 @@ module ApplicationHelper
       base_title
     else
       page_title = t @title
-      "#{base_title} | #{page_title}"
+      separator  = t 'common.title_separator'
+      "#{base_title}#{separator}#{page_title}"
     end
   end
   
