@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
     self[:role_ids] = _role_ids
     self.role_ids_without_add_user_role = _role_ids
   end 
-  alias_method_chain :role_ids=, :add_user_role  
+  #alias_method_chain :role_ids=, :add_user_role  
    
    # Exclude password info from xml output.
    def to_xml(options={})
