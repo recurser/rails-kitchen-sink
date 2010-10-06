@@ -25,5 +25,22 @@ RecursiveRailsStarter::Application.configure do
   
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   ActionMailer::Base.delivery_method = :sendmail
+  
+  # Bullet configuration.
+  # http://github.com/flyerhzm/bullet#readme
+  config.after_initialize do
+    Bullet.enable                 = true 
+    Bullet.alert                  = true
+    Bullet.bullet_logger          = true  
+    Bullet.console                = true
+    begin
+      require 'ruby-growl'
+      Bullet.growl                = true
+    rescue MissingSourceFile
+    end    
+    Bullet.rails_logger           = true
+    Bullet.disable_browser_cache  = true
+  end
+  
 end
 
