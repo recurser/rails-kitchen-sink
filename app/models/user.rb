@@ -20,11 +20,21 @@ class User < ActiveRecord::Base
   
   # Make sure all users have at least the :user role.
   def role_ids_with_add_user_role=(_role_ids)
+    _role_ids ||= []
     _role_ids << Role.by_name(:user).id
     self[:role_ids] = _role_ids
     self.role_ids_without_add_user_role = _role_ids
   end 
-  #alias_method_chain :role_ids=, :add_user_role  
+  alias_method_chain :role_ids=, :add_user_role  
+  
+  # Make sure all users have at least the :user role.
+  def roles_with_add_user_role=(_roles)
+    _roles ||= []
+    _roles << Role.by_name(:user)
+    self[:roles] = _roles
+    self.roles_without_add_user_role = _roles
+  end 
+  alias_method_chain :roles=, :add_user_role  
    
    # Exclude password info from xml output.
    def to_xml(options={})
