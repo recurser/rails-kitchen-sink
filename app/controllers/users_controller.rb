@@ -63,7 +63,8 @@ class UsersController < ApplicationController
     end
  
   rescue ActiveRecord::RecordNotFound
-    respond_to_not_found(:json, :xml, :html)
+    redirect_to :action => :index
+    #respond_to_not_found(:json, :xml, :html)
   end
   
   
