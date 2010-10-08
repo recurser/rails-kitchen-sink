@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930022804) do
+ActiveRecord::Schema.define(:version => 20101008034725) do
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,9 @@ ActiveRecord::Schema.define(:version => 20100930022804) do
     t.integer "role_id"
     t.integer "user_id"
   end
+
+  add_index "roles_users", ["role_id"], :name => "index_roles_users_on_role_id", :unique => true
+  add_index "roles_users", ["user_id"], :name => "index_roles_users_on_user_id", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
