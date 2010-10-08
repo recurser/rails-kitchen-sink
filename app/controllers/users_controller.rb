@@ -81,7 +81,6 @@ class UsersController < ApplicationController
     end
  
     respond_to do |format|
-      
       if @user.errors[:base].empty? and @user.update_attributes(params[:user])
         # Can't mass-assign role_ids - want to protect this from regular users.
         @user.role_ids = params[:user][:role_ids]

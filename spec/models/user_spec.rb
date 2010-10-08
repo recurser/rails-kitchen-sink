@@ -113,5 +113,29 @@ describe User do
     end
         
   end
+
+  describe "xml & json rendering" do
+
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+    
+    it "should not contain the encrypted password in xml" do
+      @user.to_xml.should_not =~ /encrypted_password/i
+    end
+    
+    it "should not contain the password salt in xml" do
+      @user.to_xml.should_not =~ /password_salt/i
+    end
+    
+    it "should not contain the encrypted password in json" do
+      @user.to_json.should_not =~ /encrypted_password/i
+    end
+    
+    it "should not contain the password salt in json" do
+      @user.to_json.should_not =~ /password_salt/i
+    end
+    
+  end
   
 end
