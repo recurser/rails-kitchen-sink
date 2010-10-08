@@ -61,10 +61,6 @@ class UsersController < ApplicationController
       format.xml  { render :xml => @user }
       format.html      
     end
- 
-  rescue ActiveRecord::RecordNotFound
-    redirect_to :action => :index
-    #respond_to_not_found(:json, :xml, :html)
   end
   
   
@@ -75,9 +71,6 @@ class UsersController < ApplicationController
       format.xml  { render :xml => @user }
       format.html
     end
- 
-  rescue ActiveRecord::RecordNotFound
-    respond_to_not_found(:json, :xml, :html)
   end
   
   
@@ -103,9 +96,6 @@ class UsersController < ApplicationController
         format.html { render :action => :edit, :status => :unprocessable_entity }
       end
     end
- 
-  rescue ActiveRecord::RecordNotFound
-    respond_to_not_found(:js, :xml, :html)
   end
   
   
@@ -119,9 +109,6 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
       format.html { redirect_to :action => :index }      
     end
- 
-  rescue ActiveRecord::RecordNotFound
-    respond_to_not_found(:json, :xml, :html)
   end
   
 end

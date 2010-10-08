@@ -196,21 +196,57 @@ describe UsersController do
       end
     end
     
+    describe "POST 'update'" do
+      
+      describe "failure" do
+        before(:each) do
+          @attr = { :email => "", :password => "", :password_confirmation => "" }
+        end
+
+        it "should render the 'edit' page" do
+          post :update,  :id => @user, :user => @attr
+          response.should render_template('edit')
+        end
+
+        it "should not update the user" do
+          post :update,  :id => @user, :user => @attr
+          @user.email.should_not equal @attr[:email]
+        end
+      end
+      
+      describe "success" do
+        before(:each) do
+          @attr = { :email => "test@recursive-design.com", :password => "123456", :password_confirmation => "123456" }
+        end
+
+        it "should be successful" do
+          post :update,  :id => @user, :user => @attr
+          response.should be_success
+        end
+
+        it "should have a flash.now message" do
+          post :update,  :id => @user, :user => @attr
+          success_msg = I18n.t('users.flash.user_updated', :email => @attr[:email])
+          flash.now[:notice].should == success_msg
+        end
+      end
+    end
+    
     describe "POST 'destroy'" do  
        
       it "should delete a user" do
         lambda do
-          post :destroy, :id => @user.id
+          post :destroy, :id => @user
         end.should change(User, :count).by(-1)
       end
 
       it "should redirect to the view-all-users page" do
-        post :destroy, :id => @user.id
+        post :destroy, :id => @user
         response.should redirect_to(users_path)
       end
 
       it "should have a flash.now message" do
-        post :destroy, :id => @user.id
+        post :destroy, :id => @user
         success_msg = I18n.t('users.flash.user_deleted', :email => @user.email)
         flash.now[:notice].should == success_msg
       end

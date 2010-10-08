@@ -103,13 +103,13 @@ describe User do
     it "should automatically get the user role when setting roles=" do
       admin_role = Factory(:role, :name => 'Admin')
       @user.roles = [admin_role]
-      @user.roles.length.should == 2
+      @user.should have(2).roles
     end
 
     it "should automatically get the user role when setting role_ids=" do
       admin_role = Factory(:role, :name => 'Admin')
       @user.role_ids = [admin_role.id]
-      @user.role_ids.length.should == 2
+      @user.should have(2).roles
     end
         
   end
