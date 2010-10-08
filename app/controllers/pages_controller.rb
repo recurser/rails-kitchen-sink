@@ -6,10 +6,6 @@ class PagesController < ApplicationController
     @title = 'pages.title_home'
   end
 
-  def contact
-    @title = 'pages.title_contact'
-  end
-
   def about
     @title = 'pages.title_about'
   end

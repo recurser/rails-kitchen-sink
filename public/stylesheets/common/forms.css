@@ -41,6 +41,12 @@
   max-width: 13em;
 }
 /* line 36, ../../../app/stylesheets/common/forms.sass */
+.form .formtastic fieldset ol li.text textarea,
+.form .formtastic fieldset ol li fieldset.text textarea {
+  max-width: 26em;
+  height: 10em;
+}
+/* line 41, ../../../app/stylesheets/common/forms.sass */
 .form #error_explanation {
   background-color: #ffcccc;
   color: #993333;
@@ -48,7 +54,7 @@
   padding: 0.5em;
   margin: 0 auto 1em auto;
 }
-/* line 43, ../../../app/stylesheets/common/forms.sass */
+/* line 48, ../../../app/stylesheets/common/forms.sass */
 .form #error_explanation h2 {
   font-size: 1.2em;
   margin: 0;

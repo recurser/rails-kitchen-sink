@@ -9,7 +9,7 @@ describe Role do
       no_name_role.should_not be_valid
     end
   
-    it "name should be unique" do
+    it "should have a unqiue name" do
       role_1 = Role.new({:name => 'role_1'})
       role_1.save
       role_2 = Role.new({:name => 'role_1'})

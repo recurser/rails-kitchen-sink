@@ -1,0 +1,14 @@
+
+%h3= t('notifier.contact_notification.heading')
+
+%h4
+  = t('notifier.contact_notification.from_label') 
+  = @sender.email
+  
+%h4
+  = t('notifier.contact_notification.subject_label') 
+  = @sender.subject
+
+%h4= t('notifier.contact_notification.body_label')
+
+%p= @sender.body

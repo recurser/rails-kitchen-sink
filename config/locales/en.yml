@@ -15,10 +15,25 @@ en:
     footer_copyright_message:         "Copyright 2010"
     footer_copyright_link:            "Recursive Design"
     
+  contacts:
+    title_new:                        "Contact Us"
+    new:
+      heading:                        "Contact Us"
+    flash:
+      message_sent:                   "Your message has been sent."
+      invalid_form_warning:           "There was a problem sending your message."
+    
   pages:
     title_home:                       "Home"
     title_contact:                    "Contact"
     title_about:                      "About"
+  
+  notifier:  
+    contact_notification:
+      heading:                        "You have received a new message."
+      from_label:                     "From :"
+      subject_label:                  "Subject :"
+      body_label:                     "Body :"
     
   users:
     title_index:                      "Manage Users"
@@ -135,4 +150,5 @@ en:
       edit_user: "Update your profile"
       change_password: "Change password"
       resend_unlock: "Resend instructions"
+      send_message: "Send message"
   
