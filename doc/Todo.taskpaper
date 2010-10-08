@@ -1,12 +1,11 @@
 General:
 - Add paperclip upload manager
-- Add bullet http://github.com/flyerhzm/bullet
 - Add real contact page
 - Fill in Home and About pages with real info
 - Add links to the project page
 - Add lock checkbox for user edit
 - Add html5boilerplate
-- Add test examples for page titles and user CRUD
+- Add test examples for page titles and user CRUD @done
 - Put error msgs before hints in forms @done
 - add default stylesheet @done
 - Add formtastic, formtastic-sass, validatious @done

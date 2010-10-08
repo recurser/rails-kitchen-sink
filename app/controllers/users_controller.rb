@@ -74,7 +74,7 @@ class UsersController < ApplicationController
   def update
     # Don't try to update the password if none has been provided.
     if params[:user][:password].blank?
-      [:password, :password_confirmation].collect{|p| params[:user].delete(p) }
+      [:password, :password_confirmation].collect{|param| params[:user].delete(param) }
     end
  
     respond_to do |format|
