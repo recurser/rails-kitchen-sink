@@ -18,6 +18,11 @@ class User < ActiveRecord::Base
     return !!self.roles.find_by_name(role.to_s.camelize)
   end
   
+  def save_without_confirmation!
+    self.skip_confirmation!
+    save()
+  end
+  
   # Make sure all users have at least the :user role.
   def role_ids_with_add_user_role=(_role_ids)
     _role_ids ||= []

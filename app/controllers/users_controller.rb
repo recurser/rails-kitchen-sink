@@ -31,10 +31,7 @@ class UsersController < ApplicationController
     @title = 'users.title_create'
     @user = User.new(params[:user])
     
-    # Don't want to sent any confirmation messages.
-    @user.skip_confirmation!
-    
-    if @user.save
+    if @user.save_without_confirmation!
       flash[:notice] = t 'users.flash.user_created', :email => @user.email
       # Can't mass-assign role_ids - want to protect this from regular users.
       @user.role_ids = params[:user][:role_ids]
