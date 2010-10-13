@@ -13,7 +13,7 @@ describe UsersController do
     @admin = Factory(:user, :roles => [user_role, admin_role], :email => 'admin@test.com')
   end
   
-  describe "Un-authorized user" do
+  describe "With an un-authorized user" do
     before(:each) do    
       # Log the regular user in to check that access is blocked.
       request.env['warden'] = mock(Warden, :authenticate => @user,
@@ -70,7 +70,7 @@ describe UsersController do
   end
   
   
-  describe "Authorized user" do
+  describe "With an authorized user" do
     before(:each) do    
       # Log the admin user in to check that access is allowed.
       request.env['warden'] = mock(Warden, :authenticate => @admin,
@@ -113,25 +113,19 @@ describe UsersController do
 
     describe "GET 'show'" do
       
-      describe "failure" do
-        # TODO - not found
-      end
-      
-      describe "success" do
         it "should be successful" do
-          get :show, :id => @user
-          response.should be_success
-        end
-  
-        it "should have the correct title" do
-          get :show, :id => @user
-          response.should have_selector("title", :content => I18n.t('users.title_show'))
-        end   
+        get :show, :id => @user
+        response.should be_success
+      end
 
-        it "should render the 'show' page" do
-          get :show, :id => @user
-          response.should render_template('show')
-        end
+      it "should have the correct title" do
+        get :show, :id => @user
+        response.should have_selector("title", :content => I18n.t('users.title_show'))
+      end   
+
+      it "should render the 'show' page" do
+        get :show, :id => @user
+        response.should render_template('show')
       end
       
     end
@@ -155,7 +149,7 @@ describe UsersController do
     
     describe "POST 'create'" do
       
-      describe "failure" do
+      describe "with invalid parameters" do
         before(:each) do
           @attr = { :email => "", :password => "", :password_confirmation => "" }
         end
@@ -172,7 +166,7 @@ describe UsersController do
         end
       end
       
-      describe "success" do
+      describe "with valid parameters" do
         before(:each) do
           @attr = { :email => "test@recursive-design.com", :password => "123456", :password_confirmation => "123456" }
         end
@@ -198,7 +192,7 @@ describe UsersController do
     
     describe "POST 'update'" do
       
-      describe "failure" do
+      describe "with invalid parameters" do
         before(:each) do
           @attr = { :email => "", :password => "", :password_confirmation => "" }
         end
@@ -214,7 +208,7 @@ describe UsersController do
         end
       end
       
-      describe "success" do
+      describe "with valid parameters" do
         before(:each) do
           @attr = { :email => "test@recursive-design.com", :password => "123456", :password_confirmation => "123456" }
         end

@@ -1,7 +1,7 @@
 # Models an authenticatable and authorizable user.
 class User < ActiveRecord::Base
   
-  has_and_belongs_to_many :roles
+  has_and_belongs_to_many :roles, :uniq => true
   
   # Sort users by email by default.
   default_scope :order => 'email ASC'
@@ -31,15 +31,6 @@ class User < ActiveRecord::Base
     self.role_ids_without_add_user_role = _role_ids
   end 
   alias_method_chain :role_ids=, :add_user_role  
-  
-  # Make sure all users have at least the :user role.
-  def roles_with_add_user_role=(_roles)
-    _roles ||= []
-    _roles << Role.by_name(:user)
-    self[:roles] = _roles
-    self.roles_without_add_user_role = _roles
-  end 
-  alias_method_chain :roles=, :add_user_role  
    
    # Exclude password info from xml output.
    def to_xml(options={})

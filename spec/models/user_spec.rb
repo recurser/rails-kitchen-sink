@@ -100,12 +100,6 @@ describe User do
       @user = User.create!(@attr)
     end
 
-    it "should automatically get the user role when setting roles=" do
-      admin_role = Factory(:role, :name => 'Admin')
-      @user.roles = [admin_role]
-      @user.should have(2).roles
-    end
-
     it "should automatically get the user role when setting role_ids=" do
       admin_role = Factory(:role, :name => 'Admin')
       @user.role_ids = [admin_role.id]

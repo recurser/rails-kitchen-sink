@@ -2,7 +2,7 @@
 # certain parts of the application.
 class Role < ActiveRecord::Base
   
-  has_and_belongs_to_many :users
+  has_and_belongs_to_many :users, :uniq => true
   
   # Sort roles by name by default.
   scope :roles_sorted, :order => 'name ASC'
