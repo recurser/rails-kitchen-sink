@@ -1,6 +1,6 @@
 en:
   common:
-    title_prefix:                     "Recursive"
+    title_prefix:                     "Rails Kitchen Sink"
     title_separator:                  " | "
     or:                               "or"
     header_link:

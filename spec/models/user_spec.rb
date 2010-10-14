@@ -4,7 +4,7 @@ describe User do
 
   before(:each) do
     @attr = {
-      :email => 'mail@recursive-design.com',
+      :email => 'railskitchensink@recursive-design.com',
       :password => '123456',
       :password_confirmation => '123456'
     }

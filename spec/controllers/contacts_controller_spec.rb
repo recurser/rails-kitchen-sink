@@ -45,7 +45,7 @@ describe ContactsController do
       
       before(:each) do
         @attr = {
-          :email   => 'mail@recursive-design.com',
+          :email   => 'railskitchensink@recursive-design.com',
           :subject => 'Urgent Problem',
           :body    => 'Please reply ASAP!'
         }

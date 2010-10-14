@@ -1,5 +1,5 @@
 defaults: &defaults
-  contact_to_address: mail@recursive-design.com
+  contact_to_address: railskitchensink@recursive-design.com
 
 development:
   <<: *defaults
