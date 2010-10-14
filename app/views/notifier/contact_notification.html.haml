@@ -3,12 +3,12 @@
 
 %h4
   = t('notifier.contact_notification.from_label') 
-  = @sender.email
+  = @contact.email
   
 %h4
   = t('notifier.contact_notification.subject_label') 
-  = @sender.subject
+  = @contact.subject
 
 %h4= t('notifier.contact_notification.body_label')
 
-%p= @sender.body
+%p= @contact.body

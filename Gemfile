@@ -25,6 +25,7 @@ group :development do
 end
 
 group :test do
+  gem 'email_spec',         '1.0.0'
   gem 'factory_girl_rails', '1.0'
   gem 'rspec',              '2.0.0.rc'
   gem 'spork',              '0.8.4'
