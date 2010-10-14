@@ -113,7 +113,6 @@ en:
         cancel_account_heading: "Cancel your account"
         cancel_account_description: "Unhappy with our service?"
         cancel_account_link: "Cancel your account"
-        back_link: "Go back"
         cancel_account_confirm_popup: "Are you sure? Click the 'OK' button to cancel your account."
         password_hint: "(leave this blank if you don't want to change it)"
     unlocks:

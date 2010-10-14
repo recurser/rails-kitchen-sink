@@ -488,11 +488,16 @@ a:hover {
 }
 
 /* line 30, ../../app/stylesheets/common/base.sass */
+p {
+  margin: 0.4em 0;
+}
+
+/* line 33, ../../app/stylesheets/common/base.sass */
 em {
   font-style: italic;
 }
 
-/* line 33, ../../app/stylesheets/common/base.sass */
+/* line 36, ../../app/stylesheets/common/base.sass */
 hr {
   height: 1px;
   display: block;
@@ -500,24 +505,24 @@ hr {
   border-top: 1px solid #cccccc;
 }
 
-/* line 39, ../../app/stylesheets/common/base.sass */
+/* line 42, ../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 42, ../../app/stylesheets/common/base.sass */
+/* line 45, ../../app/stylesheets/common/base.sass */
 .first {
   margin-left: 0;
 }
 
-/* line 45, ../../app/stylesheets/common/base.sass */
+/* line 48, ../../app/stylesheets/common/base.sass */
 .last {
   margin-right: 0;
 }
 
-/* line 48, ../../app/stylesheets/common/base.sass */
+/* line 51, ../../app/stylesheets/common/base.sass */
 .clear {
   clear: both;
   display: block;
@@ -525,6 +530,18 @@ hr {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+/* line 61, ../../app/stylesheets/common/base.sass */
+.box {
+  background-color: #eef3fd;
+  border: 1px solid #d5dae3;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  padding: 12px;
+  width: 90%;
 }
 
 /* line 5, ../../app/stylesheets/common/flash.sass */
@@ -677,6 +694,17 @@ header a:hover {
   color: #428edb;
 }
 
+/* line 36, ../../app/stylesheets/common/header.sass */
+body#pages_home header a#home_tab,
+body#pages_about header a#about_tab,
+body#contacts_new header a#contact_tab,
+body#users_index header a#users_tab,
+body#registrations_edit header a#profile_tab,
+body#sessions_new header a#sign_in_tab,
+body#registrations_new header a#sign_up_tab {
+  color: #222222;
+}
+
 /* line 5, ../../app/stylesheets/common/tables.sass */
 .list {
   position: relative;
@@ -708,7 +736,46 @@ header a:hover {
   background-color: white;
 }
 
+/* line 7, ../../app/stylesheets/pages/about.sass */
+body#pages_about #what_for_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 10, ../../app/stylesheets/pages/about.sass */
+body#pages_about #plans_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 13, ../../app/stylesheets/pages/about.sass */
+body#pages_about .item {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 16, ../../app/stylesheets/pages/about.sass */
+body#pages_about .item p {
+  font-style: italic;
+}
+/* line 19, ../../app/stylesheets/pages/about.sass */
+body#pages_about .item a.read_more {
+  display: block;
+  margin-bottom: 0.5em;
+  font-style: normal;
+}
+
 /* line 7, ../../app/stylesheets/pages/home.sass */
+body#pages_home hr {
+  margin: 2em 0;
+}
+/* line 10, ../../app/stylesheets/pages/home.sass */
 body#pages_home #intro_container {
   display: inline;
   float: left;
@@ -717,32 +784,17 @@ body#pages_home #intro_container {
   width: 460px;
   margin-left: 0;
 }
-/* line 11, ../../app/stylesheets/pages/home.sass */
-body#pages_home #intro_container .intro {
-  background-color: #eef3fd;
-  border: 1px solid #d5dae3;
-  border-bottom-left-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  border-top-left-radius: 10px 10px;
-  border-top-right-radius: 10px 10px;
-  padding: 12px;
-  width: 90%;
-}
-/* line 21, ../../app/stylesheets/pages/home.sass */
-body#pages_home #intro_container .intro h1 {
+/* line 16, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .box h1 {
   font-size: 2.4em;
   margin: 0;
 }
-/* line 25, ../../app/stylesheets/pages/home.sass */
-body#pages_home #intro_container .intro p {
-  margin: 0.4em 0;
-}
-/* line 28, ../../app/stylesheets/pages/home.sass */
-body#pages_home #intro_container .intro p.slogan {
+/* line 20, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .box p.slogan {
   color: #428edb;
   font-size: 1.4em;
 }
-/* line 32, ../../app/stylesheets/pages/home.sass */
+/* line 24, ../../app/stylesheets/pages/home.sass */
 body#pages_home #download_container {
   display: inline;
   float: left;
@@ -751,7 +803,7 @@ body#pages_home #download_container {
   width: 940px;
   text-align: center;
 }
-/* line 36, ../../app/stylesheets/pages/home.sass */
+/* line 28, ../../app/stylesheets/pages/home.sass */
 body#pages_home #download_container a#download_button {
   width: 195px;
   height: 57px;
@@ -761,7 +813,7 @@ body#pages_home #download_container a#download_button {
   text-indent: -9999px;
   background: transparent url("/images/download.png") top left no-repeat;
 }
-/* line 45, ../../app/stylesheets/pages/home.sass */
+/* line 37, ../../app/stylesheets/pages/home.sass */
 body#pages_home #feature_container {
   display: inline;
   float: left;
@@ -770,7 +822,7 @@ body#pages_home #feature_container {
   width: 460px;
   margin-right: 0;
 }
-/* line 49, ../../app/stylesheets/pages/home.sass */
+/* line 41, ../../app/stylesheets/pages/home.sass */
 body#pages_home #feature_container .feature {
   display: inline;
   float: left;
@@ -778,15 +830,15 @@ body#pages_home #feature_container .feature {
   margin-right: 10px;
   width: 220px;
 }
-/* line 52, ../../app/stylesheets/pages/home.sass */
+/* line 44, ../../app/stylesheets/pages/home.sass */
 body#pages_home #feature_container .feature#authentication, body#pages_home #feature_container .feature#authorization {
   margin-left: 0;
 }
-/* line 56, ../../app/stylesheets/pages/home.sass */
+/* line 48, ../../app/stylesheets/pages/home.sass */
 body#pages_home #feature_container .feature#user_management, body#pages_home #feature_container .feature#future_proof {
   margin-right: 0;
 }
-/* line 60, ../../app/stylesheets/pages/home.sass */
+/* line 52, ../../app/stylesheets/pages/home.sass */
 body#pages_home #other_features_container {
   display: inline;
   float: left;
@@ -794,7 +846,7 @@ body#pages_home #other_features_container {
   margin-right: 10px;
   width: 460px;
 }
-/* line 63, ../../app/stylesheets/pages/home.sass */
+/* line 55, ../../app/stylesheets/pages/home.sass */
 body#pages_home #other_features_container .column {
   display: inline;
   float: left;
@@ -804,11 +856,11 @@ body#pages_home #other_features_container .column {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 68, ../../app/stylesheets/pages/home.sass */
+/* line 60, ../../app/stylesheets/pages/home.sass */
 body#pages_home #other_features_container .column li {
   list-style: disc;
 }
-/* line 71, ../../app/stylesheets/pages/home.sass */
+/* line 63, ../../app/stylesheets/pages/home.sass */
 body#pages_home #about_us_container {
   display: inline;
   float: left;
@@ -816,7 +868,7 @@ body#pages_home #about_us_container {
   margin-right: 10px;
   width: 220px;
 }
-/* line 74, ../../app/stylesheets/pages/home.sass */
+/* line 66, ../../app/stylesheets/pages/home.sass */
 body#pages_home #help_container {
   display: inline;
   float: left;

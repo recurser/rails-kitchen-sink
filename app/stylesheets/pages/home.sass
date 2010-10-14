@@ -3,27 +3,19 @@
 @import common/colors
 
 body#pages_home
+  
+  hr
+    margin: 2em 0
     
   #intro_container
     +grid(6, $ninesixty-columns)
     +alpha
     
-    .intro
-      background-color: $info_bg
-      border: 1px solid $info_border
-      border-bottom-left-radius: 10px 10px
-      border-bottom-right-radius: 10px 10px
-      border-top-left-radius: 10px 10px
-      border-top-right-radius: 10px 10px
-      padding: 12px
-      width: 90%
+    .box
     
       h1
         font-size: 2.4em
         margin: 0
-        
-      p
-        margin: 0.4em 0
         
       p.slogan
         color: $link

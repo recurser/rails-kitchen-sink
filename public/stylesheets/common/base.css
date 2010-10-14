@@ -169,11 +169,16 @@ a:hover {
 }
 
 /* line 30, ../../../app/stylesheets/common/base.sass */
+p {
+  margin: 0.4em 0;
+}
+
+/* line 33, ../../../app/stylesheets/common/base.sass */
 em {
   font-style: italic;
 }
 
-/* line 33, ../../../app/stylesheets/common/base.sass */
+/* line 36, ../../../app/stylesheets/common/base.sass */
 hr {
   height: 1px;
   display: block;
@@ -181,24 +186,24 @@ hr {
   border-top: 1px solid #cccccc;
 }
 
-/* line 39, ../../../app/stylesheets/common/base.sass */
+/* line 42, ../../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 42, ../../../app/stylesheets/common/base.sass */
+/* line 45, ../../../app/stylesheets/common/base.sass */
 .first {
   margin-left: 0;
 }
 
-/* line 45, ../../../app/stylesheets/common/base.sass */
+/* line 48, ../../../app/stylesheets/common/base.sass */
 .last {
   margin-right: 0;
 }
 
-/* line 48, ../../../app/stylesheets/common/base.sass */
+/* line 51, ../../../app/stylesheets/common/base.sass */
 .clear {
   clear: both;
   display: block;
@@ -206,4 +211,16 @@ hr {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+/* line 61, ../../../app/stylesheets/common/base.sass */
+.box {
+  background-color: #eef3fd;
+  border: 1px solid #d5dae3;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  padding: 12px;
+  width: 90%;
 }

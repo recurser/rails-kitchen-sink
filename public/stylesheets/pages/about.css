@@ -1,0 +1,34 @@
+/* line 7, ../../../app/stylesheets/pages/about.sass */
+body#pages_about #what_for_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 10, ../../../app/stylesheets/pages/about.sass */
+body#pages_about #plans_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 13, ../../../app/stylesheets/pages/about.sass */
+body#pages_about .item {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 16, ../../../app/stylesheets/pages/about.sass */
+body#pages_about .item p {
+  font-style: italic;
+}
+/* line 19, ../../../app/stylesheets/pages/about.sass */
+body#pages_about .item a.read_more {
+  display: block;
+  margin-bottom: 0.5em;
+  font-style: normal;
+}

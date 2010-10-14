@@ -1,5 +1,6 @@
 General:
 - Don't allow users to edit or delete themselves
+- Add instructions on contact page - mails will not be read, test only, visit recursive contact page with suggestions
 - Add user/pass instructions + rebuild timeline info to login page
 - Fill in Home and About pages with real info
 - Add lock checkbox for user edit

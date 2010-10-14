@@ -37,3 +37,14 @@ header a:visited {
 header a:hover {
   color: #428edb;
 }
+
+/* line 36, ../../../app/stylesheets/common/header.sass */
+body#pages_home header a#home_tab,
+body#pages_about header a#about_tab,
+body#contacts_new header a#contact_tab,
+body#users_index header a#users_tab,
+body#registrations_edit header a#profile_tab,
+body#sessions_new header a#sign_in_tab,
+body#registrations_new header a#sign_up_tab {
+  color: #222222;
+}
