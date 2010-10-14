@@ -5,10 +5,6 @@ describe PagesController do
   include Devise::TestHelpers
   
   render_views
-  
-  before(:each) do
-    @title_prefix = I18n.t('common.title_prefix') + I18n.t('common.title_separator')
-  end
 
   describe "GET 'home'" do
     it "should be successful" do

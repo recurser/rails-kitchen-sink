@@ -184,8 +184,8 @@ describe UsersController do
 
         it "should have a flash.now message" do
           post :create, :user => @attr
-          success_msg = I18n.t('users.flash.user_created', :email => @attr[:email])
-          flash.now[:notice].should == success_msg
+          msg = I18n.t('users.flash.user_created', :email => @attr[:email])
+          flash.now[:notice].should == msg
         end
       end
     end
@@ -220,8 +220,8 @@ describe UsersController do
 
         it "should have a flash.now message" do
           post :update,  :id => @user, :user => @attr
-          success_msg = I18n.t('users.flash.user_updated', :email => @attr[:email])
-          flash.now[:notice].should == success_msg
+          msg = I18n.t('users.flash.user_updated', :email => @attr[:email])
+          flash.now[:notice].should == msg
         end
       end
     end
@@ -241,8 +241,8 @@ describe UsersController do
 
       it "should have a flash.now message" do
         post :destroy, :id => @user
-        success_msg = I18n.t('users.flash.user_deleted', :email => @user.email)
-        flash.now[:notice].should == success_msg
+        msg = I18n.t('users.flash.user_deleted', :email => @user.email)
+        flash.now[:notice].should == msg
       end
       
     end
