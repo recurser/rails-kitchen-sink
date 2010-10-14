@@ -12,4 +12,8 @@ module ApplicationHelper
     end
   end
   
+  def body_id
+    "#{controller_name}_#{action_name}"
+  end
+  
 end

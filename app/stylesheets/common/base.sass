@@ -8,6 +8,13 @@
 
 +text
 
+body
+  font-family: helvetica neue, arial, sans-serif
+
+h1,h2,h3,h4
+  font-family: verdana,helvetica,arial,sans-serif
+  margin: 0 0 0.1em 0
+  
 a
   text-decoration: none
   color: $link
@@ -19,7 +26,10 @@ a
   &:hover
     color: $link_visited
     text-decoration: underline
-    
+
+em
+  font-style: italic
+  
 hr
   height: 1px
   display: block
@@ -28,6 +38,12 @@ hr
 
 .content
   +grid-container
+  
+.first
+  +alpha
+  
+.last
+  +omega
   
 .clear
   clear: both

@@ -18,7 +18,7 @@ en:
   contacts:
     title_new:                        "Contact Us"
     new:
-      heading:                        "Contact Us"
+      heading:                        "Example Contact Form"
     flash:
       message_sent:                   "Your message has been sent."
       invalid_form_warning:           "There was a problem sending your message."

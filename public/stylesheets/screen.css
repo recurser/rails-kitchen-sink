@@ -461,22 +461,38 @@ fieldset {
 }
 
 /* line 11, ../../app/stylesheets/common/base.sass */
+body {
+  font-family: helvetica neue, arial, sans-serif;
+}
+
+/* line 14, ../../app/stylesheets/common/base.sass */
+h1, h2, h3, h4 {
+  font-family: verdana, helvetica, arial, sans-serif;
+  margin: 0 0 0.1em 0;
+}
+
+/* line 18, ../../app/stylesheets/common/base.sass */
 a {
   text-decoration: none;
   color: #428edb;
 }
-/* line 15, ../../app/stylesheets/common/base.sass */
+/* line 22, ../../app/stylesheets/common/base.sass */
 a:visited {
   color: #428edb;
   text-decoration: none;
 }
-/* line 19, ../../app/stylesheets/common/base.sass */
+/* line 26, ../../app/stylesheets/common/base.sass */
 a:hover {
   color: #428edb;
   text-decoration: underline;
 }
 
-/* line 23, ../../app/stylesheets/common/base.sass */
+/* line 30, ../../app/stylesheets/common/base.sass */
+em {
+  font-style: italic;
+}
+
+/* line 33, ../../app/stylesheets/common/base.sass */
 hr {
   height: 1px;
   display: block;
@@ -484,14 +500,24 @@ hr {
   border-top: 1px solid #cccccc;
 }
 
-/* line 29, ../../app/stylesheets/common/base.sass */
+/* line 39, ../../app/stylesheets/common/base.sass */
 .content {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 32, ../../app/stylesheets/common/base.sass */
+/* line 42, ../../app/stylesheets/common/base.sass */
+.first {
+  margin-left: 0;
+}
+
+/* line 45, ../../app/stylesheets/common/base.sass */
+.last {
+  margin-right: 0;
+}
+
+/* line 48, ../../app/stylesheets/common/base.sass */
 .clear {
   clear: both;
   display: block;
@@ -680,4 +706,121 @@ header a:hover {
 .list table td {
   color: #222222;
   background-color: white;
+}
+
+/* line 7, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+  margin-left: 0;
+}
+/* line 11, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .intro {
+  background-color: #eef3fd;
+  border: 1px solid #d5dae3;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  padding: 12px;
+  width: 90%;
+}
+/* line 21, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .intro h1 {
+  font-size: 2.4em;
+  margin: 0;
+}
+/* line 25, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .intro p {
+  margin: 0.4em 0;
+}
+/* line 28, ../../app/stylesheets/pages/home.sass */
+body#pages_home #intro_container .intro p.slogan {
+  color: #428edb;
+  font-size: 1.4em;
+}
+/* line 32, ../../app/stylesheets/pages/home.sass */
+body#pages_home #download_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  text-align: center;
+}
+/* line 36, ../../app/stylesheets/pages/home.sass */
+body#pages_home #download_container a#download_button {
+  width: 195px;
+  height: 57px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  text-indent: -9999px;
+  background: transparent url("/images/download.png") top left no-repeat;
+}
+/* line 45, ../../app/stylesheets/pages/home.sass */
+body#pages_home #feature_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+  margin-right: 0;
+}
+/* line 49, ../../app/stylesheets/pages/home.sass */
+body#pages_home #feature_container .feature {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+/* line 52, ../../app/stylesheets/pages/home.sass */
+body#pages_home #feature_container .feature#authentication, body#pages_home #feature_container .feature#authorization {
+  margin-left: 0;
+}
+/* line 56, ../../app/stylesheets/pages/home.sass */
+body#pages_home #feature_container .feature#user_management, body#pages_home #feature_container .feature#future_proof {
+  margin-right: 0;
+}
+/* line 60, ../../app/stylesheets/pages/home.sass */
+body#pages_home #other_features_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+/* line 63, ../../app/stylesheets/pages/home.sass */
+body#pages_home #other_features_container .column {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 68, ../../app/stylesheets/pages/home.sass */
+body#pages_home #other_features_container .column li {
+  list-style: disc;
+}
+/* line 71, ../../app/stylesheets/pages/home.sass */
+body#pages_home #about_us_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+/* line 74, ../../app/stylesheets/pages/home.sass */
+body#pages_home #help_container {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
 }

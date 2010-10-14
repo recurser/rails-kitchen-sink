@@ -1,0 +1,76 @@
+
+@import 960/grid
+@import common/colors
+
+body#pages_home
+    
+  #intro_container
+    +grid(6, $ninesixty-columns)
+    +alpha
+    
+    .intro
+      background-color: $info_bg
+      border: 1px solid $info_border
+      border-bottom-left-radius: 10px 10px
+      border-bottom-right-radius: 10px 10px
+      border-top-left-radius: 10px 10px
+      border-top-right-radius: 10px 10px
+      padding: 12px
+      width: 90%
+    
+      h1
+        font-size: 2.4em
+        margin: 0
+        
+      p
+        margin: 0.4em 0
+        
+      p.slogan
+        color: $link
+        font-size: 1.4em
+        
+  #download_container
+    +grid(12, $ninesixty-columns)
+    text-align: center
+    
+    a#download_button
+      width: 195px
+      height: 57px
+      display: block
+      overflow: hidden
+      margin: 0 auto
+      text-indent: -9999px
+      background: transparent url('/images/download.png') top left no-repeat
+    
+  #feature_container
+    +grid(6, $ninesixty-columns)
+    +omega
+    
+    .feature
+      +grid(3, $ninesixty-columns)
+      
+      &#authentication,
+      &#authorization
+        +alpha
+      
+      &#user_management,
+      &#future_proof
+        +omega 
+        
+  #other_features_container
+    +grid(6, $ninesixty-columns) 
+    
+    .column
+      +grid(3, $ninesixty-columns) 
+      +alpha
+      +omega
+      
+      li
+        list-style: disc
+        
+  #about_us_container
+    +grid(3, $ninesixty-columns) 
+    
+  #help_container
+    +grid(3, $ninesixty-columns) 
+    
