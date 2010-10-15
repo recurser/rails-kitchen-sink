@@ -2,9 +2,9 @@ General:
 - Don't allow users to edit or delete themselves
 - Add instructions on contact page - mails will not be read, test only, visit recursive contact page with suggestions
 - Add user/pass instructions + rebuild timeline info to login page
-- Fill in Home and About pages with real info
 - Add lock checkbox for user edit
 - Add html5boilerplate
+- Fill in Home and About pages with real info @done
 - Add links to the project page @done
 - Add real contact page @done
 - Add test examples for page titles and user CRUD @done

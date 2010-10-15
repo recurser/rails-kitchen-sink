@@ -1,0 +1,41 @@
+
+ja:
+  errors:
+    messages:
+      not_found: "見つかりませんでした"
+      already_confirmed: "すでに確認された"
+      not_locked: "されたロックされていない"
+
+  devise:
+    failure:
+      unauthenticated: "あなたはログインしてまたは継続する前に登録する必要があります。"
+      unconfirmed: "続行する前に、アカウントを確認する必要があります。"
+      locked: "アカウントがロックされています。手順については、メールを確認してください。"
+      invalid: "無効な電子メールまたはパスワードを指定します。"
+      invalid_token: "無効な認証トークン。"
+      timeout: "あなたのセッションは続行するには、再度ログインしてください、期限が切れています。"
+      inactive: "アカウントがまだアクティブにされませんでした。"
+    sessions:
+      user:
+        signed_in: "これでインチ署名されている"
+        signed_out: "あなたは今では署名されています。すぐに戻って来い！"
+    passwords:
+      send_instructions: "あなたは数分でパスワードをリセットする方法について手順を記載したメールが送信されます。"
+      updated: "パスワードが正常に変更されました。これでインチ署名されている"
+    confirmations:
+      send_instructions: "あなたは数分でアカウントを確認する方法について手順を記載したメールが送信されます。"
+      confirmed: "あなたのアカウントは正常に確認された。これでインチ署名されている"
+    registrations:
+      signed_up: "お申し込みいただきありがとうございます！確認メールアドレスに送信されています。"
+      updated: "アカウントが更新されています。"
+      destroyed: "アカウントがキャンセルされました。我々は再びお会いできることをしております！"
+    unlocks:
+      send_instructions: "あなたは数分でアカウントのロックを解除する方法について手順を記載したメールが送信されます。"
+      unlocked: "アカウントが正常にロック解除された。これでインチ署名されている"
+    mailer:
+      confirmation_instructions: 
+        subject: "あなたのメールアドレスを確認してください"
+      reset_password_instructions: 
+        subject: "どのようにあなたのパスワードをリセットする"
+      unlock_instructions: 
+        subject: "どのようにするには、アカウントのロックを解除する"

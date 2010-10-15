@@ -1,0 +1,169 @@
+
+ja:
+  common:
+    title_prefix: "Railsのキッチンシンク"
+    title_separator: "|"
+    or: "または"
+    header_link:
+        home: "ホーム"
+        about: "について"
+        contact: "お問い合わせ"
+        users: "ユーザー"
+        profile: "プロフィール"
+        sign_up: "交流しましょう"
+        sign_in: "サインイン"
+        sign_out: "サインアウト"
+    footer_copyright_message: "Copyright 2010"
+    footer_copyright_link: "Recursive Design"
+    
+    
+    
+  contacts:
+    title_new: "お問い合わせ"
+    new:
+      heading: "フォームの例お問い合わせ"
+    flash:
+      message_sent: "あなたのメッセージが送信されています。"
+      invalid_form_warning: "あなたのメッセージを送信中に問題があった。"
+      
+      
+    
+  pages:
+    title_home: "ホーム"
+    title_contact: "お問い合わせ"
+    title_about: "について"
+    
+    
+  
+  notifier:  
+    contact_notification:
+      heading: "あなたは、新しいメッセージを受信した。"
+      from_label: "投稿者："
+      subject_label: "題目："
+      body_label: "ボディ："
+      
+      
+    
+  users:
+    title_index: "ユーザーの管理"
+    title_edit: "ユーザーを編集"
+    title_new: "新規ユーザー"
+    title_show: "友達ユーザー"
+    flash:
+      user_updated: "ユーザー％{メール}更新されています。"
+      user_deleted: "ユーザー％{メール}削除されています。"
+      user_created: "ユーザー％{メール}作成されています。"
+    index:
+      heading: "すべてのユーザー"
+      create_user_link: "新しいユーザーを作成します。"
+      user_list:
+        email_heading: "Eメール"
+        role_heading: "ロール"
+    edit:
+      heading: "編集％{メール}"
+      delete_user_link: "削除このユーザー"
+      all_users_link: "すべてのユーザーを表示"
+      delete_user_confirm_popup: "あなたはよろしいですか？このユーザーを削除するには、[OK]ボタンをクリックしてください。"
+      password_hint: "（あなたはそれを変更したくない場合は、この空白のまま）"
+    new:
+      heading: "新しいユーザーを作成します。"
+      cancel_link: "キャンセル"
+    show:
+      heading: "％{メール}を表示"
+      edit_user_link: "このユーザーを編集"
+      all_users_link: "すべてのユーザーを表示"
+      user_detail:
+        email_heading: "Eメール"
+        role_heading: "ロール"
+        sign_in_count_heading: "してカウントの"
+        current_sign_in_at_heading: "サインイン時の電流"
+        last_sign_in_at_heading: "サインインでの最後の"
+        current_sign_in_ip_heading: "現在のIPアドレス"
+        last_sign_in_ip_heading: "最後のIPアドレス"
+        failed_attempts_heading: "失敗した試行"
+        created_at_heading: "作成"
+        updated_at_heading: "更新"
+        locked_at_heading: "ロック"
+    _user:
+      edit_link: "編集"
+      delete_link: "削除"
+      delete_user_confirm_popup: "あなたはよろしいですか？このユーザーを削除するには、[OK]ボタンをクリックしてください。"
+      
+      
+
+  devise:
+    confirmations:
+      new:
+        heading: "再送信の確認手順"
+    mailer:
+      confirmation_instructions:
+        welcome_message: "こんにちは％{メール}！"
+        confirm_link_explanation: "リンクアカウントを確認するには、以下をクリックしてください："
+        confirm_link: "アカウントを確認してください"
+      reset_password_instructions:
+        welcome_message: "こんにちは％{メール}！"
+        confirm_link_explanation: "誰かがパスワードを変更するためのリンクを要求しています。あなたは下のリンクを介してこれを行うことができます："
+        confirm_link: "パスワードを変更する"
+        ignore_mail_explanation: "パスワードのリセットを要求していない場合は、このメールを無視してください。"
+        change_explanation: "あなたのパスワードは、上記のリンクをクリックするまで、新しいものを作成する変更されません。"
+      unlock_instructions:
+        welcome_message: "こんにちは％{メール}！"
+        lock_explanation: "アカウントの試行に失敗記号の過剰な量のためにロックされています。"
+        resend_link_explanation: "するには、以下のリンクをクリックすると、アカウントのロックを解除する]をクリック："
+        resend_link: "ロックを解除するアカウント"
+    passwords:
+      new:
+        heading: "パスワードを忘れましたか？"
+      edit:
+        heading: "パスワードを変更する"
+    registrations:
+      new:
+        heading: "交流しましょう"
+      edit:
+        heading: "あなたのプロフィールを編集"
+        cancel_account_heading: "アカウントのキャンセル"
+        cancel_account_description: "当社のサービスに不満？"
+        cancel_account_link: "アカウントのキャンセル"
+        cancel_account_confirm_popup: "あなたはよろしいですか？アカウントをキャンセルして[OK]ボタンをクリックしてください。"
+        password_hint: "（あなたはそれを変更したくない場合は、この空白のまま）"
+    unlocks:
+      new:
+        heading: "再送信の指示を解除"
+    sessions:
+      new:
+        heading: "にしましょう"
+    shared:
+      _links:
+        sign_in: "にしましょう"
+        sign_up: "交流しましょう"
+        forgot_password: "パスワードを忘れましたか？"
+        resend_confirm: "確認の指示を受け取っていないか？"
+        unlock: "受け取っていないの指示を解除？"
+        
+        
+
+  formtastic:
+    labels:
+      user:
+        email: "Eメール"
+        password: "パスワード"
+        password_confirmation: "パスワードの確認"
+        current_password: "現在のパスワード"
+        remember_me: "次回から入力を省略"
+      contact:
+        email: "Eメール"
+        subject: "題目"
+        body: "ボディ"
+    hints:
+      user:
+        edit:
+          current_password: "（私達はあなたの変更を確認するために、現在のパスワードが必要です）"
+    actions:
+      sign_in: "にしましょう"
+      sign_up: "交流しましょう"
+      reset_pass: "リセットパスワード"
+      resend_confirm: "再送信確認"
+      edit_user: "自分のプロファイルを更新"
+      change_password: "パスワードの変更"
+      resend_unlock: "再送命令"
+      send_message: "メッセージを送信"

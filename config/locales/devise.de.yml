@@ -1,0 +1,41 @@
+
+de:
+  errors:
+    messages:
+      not_found: "nicht gefunden"
+      already_confirmed: "wurde bereits bestätigt,"
+      not_locked: "war nicht verschlossen"
+
+  devise:
+    failure:
+      unauthenticated: "Sie müssen sich anmelden oder registrieren, bevor Sie fortfahren."
+      unconfirmed: "Sie haben Ihr Konto, bevor Sie fortfahren bestätigen."
+      locked: "Ihr Konto wurde gesperrt. Überprüfen Sie Ihre E-Mail für weitere Instruktionen."
+      invalid: "Ungültige E-Mail oder Passwort."
+      invalid_token: "Ungültige Authentifizierungs-Token."
+      timeout: "Ihre Sitzung ist abgelaufen, bitte melden Sie sich erneut, um fortzufahren."
+      inactive: "Ihr Konto wurde noch nicht aktiviert."
+    sessions:
+      user:
+        signed_in: "Sie sind jetzt angemeldet"
+        signed_out: "Sie sind jetzt abgemeldet. Komm bald zurück!"
+    passwords:
+      send_instructions: "Sie erhalten eine E-Mail mit Anweisungen, wie Sie Ihr Passwort in wenigen Minuten zurück zu erhalten."
+      updated: "Ihr Passwort wurde erfolgreich geändert. Sie sind jetzt angemeldet"
+    confirmations:
+      send_instructions: "Sie erhalten eine E-Mail mit Anweisungen, wie Sie Ihre Rechnung in wenigen Minuten zu bestätigen."
+      confirmed: "Ihr Konto wurde erfolgreich bestätigt. Sie sind jetzt angemeldet"
+    registrations:
+      signed_up: "Vielen Dank für Ihre Anmeldung! Eine Bestätigung über Ihre E-Mail-Adresse gesendet."
+      updated: "Ihr Konto wurde aktualisiert."
+      destroyed: "Ihr Konto wurde abgesagt. Wir hoffen, Sie bald wieder zu sehen!"
+    unlocks:
+      send_instructions: "Sie erhalten eine E-Mail mit Anweisungen zum Entsperren Ihres Kontos in ein paar Minuten erhalten."
+      unlocked: "Ihr Konto wurde erfolgreich entsperrt. Sie sind jetzt angemeldet"
+    mailer:
+      confirmation_instructions: 
+        subject: "Bestätigen Sie Ihre E-Mail Adresse"
+      reset_password_instructions: 
+        subject: "Wie Ihr Passwort zurücksetzen"
+      unlock_instructions: 
+        subject: "Wie zu entsperren Ihr Konto"

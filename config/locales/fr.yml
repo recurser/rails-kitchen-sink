@@ -1,0 +1,169 @@
+
+fr:
+  common:
+    title_prefix: "Kitchen Sink Rails"
+    title_separator: "|"
+    or: "ou"
+    header_link:
+        home: "Accueil"
+        about: "A propos"
+        contact: "Contact"
+        users: "Utilisateurs"
+        profile: "Profil"
+        sign_up: "Inscrivez-vous"
+        sign_in: "Identifiez-vous"
+        sign_out: "Inscrivez-Out"
+    footer_copyright_message: "Copyright 2010"
+    footer_copyright_link: "Recursive Design"
+    
+    
+    
+  contacts:
+    title_new: "Contactez-nous"
+    new:
+      heading: "Exemple Formulaire de contact"
+    flash:
+      message_sent: "Votre message a été envoyé."
+      invalid_form_warning: "Il y avait un problème d'envoyer votre message."
+      
+      
+    
+  pages:
+    title_home: "Accueil"
+    title_contact: "Contact"
+    title_about: "A propos"
+    
+    
+  
+  notifier:  
+    contact_notification:
+      heading: "Vous avez reçu un nouveau message."
+      from_label: "De:"
+      subject_label: "Objet:"
+      body_label: "Conseil:"
+      
+      
+    
+  users:
+    title_index: "Gérer les utilisateurs"
+    title_edit: "Modifier l'utilisateur"
+    title_new: "Nouvel utilisateur"
+    title_show: "Voir utilisateur"
+    flash:
+      user_updated: "L'utilisateur% {email} a été mis à jour."
+      user_deleted: "L'utilisateur% {email} a été supprimé."
+      user_created: "L'utilisateur% {email} a été créé."
+    index:
+      heading: "Tous les utilisateurs"
+      create_user_link: "Créer un nouvel utilisateur"
+      user_list:
+        email_heading: "Email"
+        role_heading: "Rôles"
+    edit:
+      heading: "Modification% {email}"
+      delete_user_link: "Supprimer cet utilisateur"
+      all_users_link: "afficher tous les utilisateurs"
+      delete_user_confirm_popup: "Etes-vous sûr? Cliquez sur le bouton 'OK' pour supprimer cet utilisateur."
+      password_hint: "(Laisser ce champ vide si vous ne voulez pas le changer)"
+    new:
+      heading: "Créer un nouvel utilisateur"
+      cancel_link: "annuler"
+    show:
+      heading: "Affichage d'un% {email}"
+      edit_user_link: "Modifier cet utilisateur"
+      all_users_link: "afficher tous les utilisateurs"
+      user_detail:
+        email_heading: "Email"
+        role_heading: "Rôles"
+        sign_in_count_heading: "Inscrivez-vous en compte"
+        current_sign_in_at_heading: "Actuel sign-in à"
+        last_sign_in_at_heading: "Dernière sign-in à"
+        current_sign_in_ip_heading: "Adresse IP actuelle"
+        last_sign_in_ip_heading: "Dernière adresse IP"
+        failed_attempts_heading: "Échec des tentatives"
+        created_at_heading: "Créé"
+        updated_at_heading: "Mise à jour"
+        locked_at_heading: "Verrouillé"
+    _user:
+      edit_link: "modifier"
+      delete_link: "supprimer"
+      delete_user_confirm_popup: "Etes-vous sûr? Cliquez sur le bouton 'OK' pour supprimer cet utilisateur."
+      
+      
+
+  devise:
+    confirmations:
+      new:
+        heading: "Renvoyer la confirmation des instructions"
+    mailer:
+      confirmation_instructions:
+        welcome_message: "Salut% {email}!"
+        confirm_link_explanation: "S'il vous plaît cliquer sur le lien ci-dessous pour confirmer votre compte:"
+        confirm_link: "Confirmez votre compte"
+      reset_password_instructions:
+        welcome_message: "Salut% {email}!"
+        confirm_link_explanation: "Quelqu'un a demandé un lien pour changer votre mot de passe. Vous vous pouvez le faire via le lien ci-dessous:"
+        confirm_link: "Changez votre mot de passe"
+        ignore_mail_explanation: "Si vous n'avez pas demandé une réinitialisation de mot de passe, s'il vous plaît ignorer cet e-mail."
+        change_explanation: "Votre mot de passe ne changera pas jusqu'à ce que vous cliquez sur le lien ci-dessus et en créer un nouveau."
+      unlock_instructions:
+        welcome_message: "Salut% {email}!"
+        lock_explanation: "Votre compte a été bloqué en raison d'une quantité excessive de signer échoué dans les tentatives."
+        resend_link_explanation: "Cliquez sur le lien ci-dessous pour débloquer votre compte:"
+        resend_link: "Débloquer votre compte"
+    passwords:
+      new:
+        heading: "Mot de passe oublié?"
+      edit:
+        heading: "Changez votre mot de passe"
+    registrations:
+      new:
+        heading: "Inscrivez-vous sur"
+      edit:
+        heading: "Modifiez votre profil"
+        cancel_account_heading: "Annuler votre compte"
+        cancel_account_description: "Malheureux avec notre service?"
+        cancel_account_link: "Annuler votre compte"
+        cancel_account_confirm_popup: "Etes-vous sûr? Cliquez sur le bouton 'OK' pour annuler votre compte."
+        password_hint: "(Laisser ce champ vide si vous ne voulez pas le changer)"
+    unlocks:
+      new:
+        heading: "Renvoyer déverrouiller instructions"
+    sessions:
+      new:
+        heading: "Identifiez-vous"
+    shared:
+      _links:
+        sign_in: "Identifiez-vous"
+        sign_up: "Inscrivez-vous sur"
+        forgot_password: "Mot de passe oublié?"
+        resend_confirm: "N'a pas reçu les instructions de confirmation?"
+        unlock: "N'a pas reçu de débloquer des instructions?"
+        
+        
+
+  formtastic:
+    labels:
+      user:
+        email: "Email"
+        password: "Mot de passe"
+        password_confirmation: "Confirmer mot de passe"
+        current_password: "Mot de passe actuel"
+        remember_me: "Se souvenir de moi"
+      contact:
+        email: "Email"
+        subject: "Sous réserve"
+        body: "Organe"
+    hints:
+      user:
+        edit:
+          current_password: "(Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)"
+    actions:
+      sign_in: "Identifiez-vous"
+      sign_up: "Inscrivez-vous sur"
+      reset_pass: "Réinitialiser mon mot de passe"
+      resend_confirm: "Renvoyer la confirmation"
+      edit_user: "Mettez à jour votre profil"
+      change_password: "Changer mot de passe"
+      resend_unlock: "Renvoyer les instructions"
+      send_message: "Envoyer un message"

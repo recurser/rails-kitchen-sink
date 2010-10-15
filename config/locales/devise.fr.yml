@@ -1,0 +1,41 @@
+
+fr:
+  errors:
+    messages:
+      not_found: "pas trouvé"
+      already_confirmed: "a déjà été confirmé"
+      not_locked: "n'était pas verrouillée"
+
+  devise:
+    failure:
+      unauthenticated: "Vous devez vous identifier ou vous inscrire avant de poursuivre."
+      unconfirmed: "Vous devez confirmer votre compte avant de continuer."
+      locked: "Votre compte a été verrouillé. Vérifiez votre e-mail pour obtenir des instructions."
+      invalid: "e-mail ou mot de passe."
+      invalid_token: "d'authentification Blancs jeton."
+      timeout: "Votre session a expiré, s'il vous plaît vous connecter à nouveau pour continuer."
+      inactive: "Votre compte n'est pas encore activé."
+    sessions:
+      user:
+        signed_in: "Vous êtes maintenant signé en"
+        signed_out: "Vous êtes maintenant déconnecté. Revenez bientôt!"
+    passwords:
+      send_instructions: "Vous recevrez un email avec les instructions sur la façon de réinitialiser votre mot de passe dans quelques minutes."
+      updated: "Votre mot de passe a été changé avec succès. Vous êtes maintenant signé en"
+    confirmations:
+      send_instructions: "Vous recevrez un email avec les instructions sur la façon de confirmer votre compte en quelques minutes."
+      confirmed: "Votre compte a bien été confirmée. Vous êtes maintenant signé en"
+    registrations:
+      signed_up: "Merci de vous inscrire! Une confirmation a été envoyé à votre adresse e-mail."
+      updated: "Votre compte a été mis à jour."
+      destroyed: "Votre compte a été annulé. Nous espérons vous revoir bientôt!"
+    unlocks:
+      send_instructions: "Vous recevrez un email avec les instructions sur la façon de déverrouiller votre compte en quelques minutes."
+      unlocked: "Votre compte a été débloqué. Vous êtes maintenant signé en"
+    mailer:
+      confirmation_instructions: 
+        subject: "Confirmez votre adresse e-mail"
+      reset_password_instructions: 
+        subject: "Comment faire pour réinitialiser votre mot de passe"
+      unlock_instructions: 
+        subject: "Comment faire pour débloquer votre compte"

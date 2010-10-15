@@ -15,6 +15,8 @@ en:
     footer_copyright_message:         "Copyright 2010"
     footer_copyright_link:            "Recursive Design"
     
+    
+    
   contacts:
     title_new:                        "Contact Us"
     new:
@@ -22,11 +24,15 @@ en:
     flash:
       message_sent:                   "Your message has been sent."
       invalid_form_warning:           "There was a problem sending your message."
+      
+      
     
   pages:
     title_home:                       "Home"
     title_contact:                    "Contact"
     title_about:                      "About"
+    
+    
   
   notifier:  
     contact_notification:
@@ -34,6 +40,8 @@ en:
       from_label:                     "From :"
       subject_label:                  "Subject :"
       body_label:                     "Body :"
+      
+      
     
   users:
     title_index:                      "Manage Users"
@@ -79,6 +87,8 @@ en:
       edit_link:                      "edit"
       delete_link:                    "delete"
       delete_user_confirm_popup:  "Are you sure? Click the 'OK' button to delete this user."
+      
+      
 
   devise:
     confirmations:
@@ -128,6 +138,8 @@ en:
         forgot_password: "Forgot your password?"
         resend_confirm: "Didn't receive confirmation instructions?"
         unlock: "Didn't receive unlock instructions?"
+        
+        
 
   formtastic:
     labels:
@@ -137,6 +149,10 @@ en:
         password_confirmation: "Confirm password"
         current_password: "Current password"
         remember_me: "Remember me"
+      contact:
+        email: "Email"
+        subject: "Subject"
+        body: "Body"
     hints:
       user:
         edit:

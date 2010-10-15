@@ -5,9 +5,9 @@
   = semantic_form_for @contact, :url => contacts_path  do |f|
     
     = f.inputs do
-      = f.input :email, :as => :string 
+      = f.input :email,   :as => :string 
       = f.input :subject, :as => :string 
-      = f.input :body, :as => :text
+      = f.input :body,    :as => :text
       
     = f.buttons do    
       = f.commit_button :send_message
