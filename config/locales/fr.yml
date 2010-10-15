@@ -2,7 +2,7 @@
 fr:
   common:
     title_prefix: "Kitchen Sink Rails"
-    title_separator: "|"
+    title_separator: " | "
     or: "ou"
     header_link:
         home: "Accueil"
