@@ -1,17 +1,18 @@
 RecursiveRailsStarter::Application.routes.draw do
-  
-  resources :contacts, :only => [:new, :create]
 
-  resources :users
+  scope '(:locale)', :locale => /en|fr/ do
+    resources :contacts, :only => [:new, :create]
+    resources  :users
+    devise_for :users, :path => '/account'
 
-  devise_for :users, :path => '/account'
-
-  get 'pages/home'
-  get 'pages/about'
+    match '/:locale/contact', :to => 'contacts#new'
+    match '/contact', :to => 'contacts#new'
   
-  match '/contact', :to => 'contacts#new'
-  match '/about',   :to => 'pages#about'
+    match '/:locale/about',   :to => 'pages#about'
+    match '/about',   :to => 'pages#about'
   
-  root :to => 'pages#home'
+    match '/:locale' => 'pages#home'
+    root :to => 'pages#home'
+  end
   
 end

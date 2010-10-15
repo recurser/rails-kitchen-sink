@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
+  before_filter :set_locale
+  
+  # Redirect un-authorized accesses to the home page, and display a message.
   rescue_from CanCan::AccessDenied do |exception|
     flash[:error] = exception.message
     redirect_to root_url
@@ -15,6 +18,17 @@ class ApplicationController < ActionController::Base
   # Make the current user object available to views
   def get_user
     @current_user = current_user
+  end
+  
+  # Auto-append the locale to the URL options.
+  def default_url_options(options={})
+    { :locale => I18n.locale }
+  end
+  
+  # Set the current locale from the :locale URL parameter. If params[:locale] 
+  # is nil then I18n.default_locale will be used
+  def set_locale
+    I18n.locale = params[:locale]
   end
   
 end
