@@ -12,6 +12,8 @@ en:
         sign_up:                      "Sign Up"
         sign_in:                      "Sign In"
         sign_out:                     "Sign Out"
+        english:                      "English"
+        french:                       "Francais"
     footer_copyright_message:         "Copyright 2010"
     footer_copyright_link:            "Recursive Design"
     

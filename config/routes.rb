@@ -6,10 +6,10 @@ RecursiveRailsStarter::Application.routes.draw do
     devise_for :users, :path => '/account'
 
     match '/:locale/contact', :to => 'contacts#new'
-    match '/contact', :to => 'contacts#new'
+    match '/contact',         :to => 'contacts#new'
   
     match '/:locale/about',   :to => 'pages#about'
-    match '/about',   :to => 'pages#about'
+    match '/about',           :to => 'pages#about'
   
     match '/:locale' => 'pages#home'
     root :to => 'pages#home'

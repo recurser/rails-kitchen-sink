@@ -16,4 +16,8 @@ module ApplicationHelper
     "#{controller_name}_#{action_name}"
   end
   
+  def locale
+    I18n.locale.to_s
+  end
+  
 end

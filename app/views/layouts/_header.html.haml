@@ -1,15 +1,19 @@
 %header#header
   %nav
     %ul
-      %li= link_to t('common.header_link.home'), root_path, :id => 'home_tab'
-      %li= link_to t('common.header_link.about'), about_path, :id => 'about_tab'
-      %li= link_to t('common.header_link.contact'), contact_path, :id => 'contact_tab'
+      %li#home_tab= link_to t('common.header_link.home'), root_path
+      %li#about_tab= link_to t('common.header_link.about'), about_path
+      %li#contact_tab= link_to t('common.header_link.contact'), contact_path
       - if user_signed_in?
         - if can?(:read, User)
-          %li= link_to t('common.header_link.users'), users_path, :id => 'users_tab'
-        %li= link_to t('common.header_link.profile'), edit_user_registration_path, :id => 'profile_tab'
-        %li= link_to t('common.header_link.sign_out'), destroy_user_session_path, :id => 'sign_out_tab'
+          %li#users_tab= link_to t('common.header_link.users'), users_path
+        %li#profile_tab= link_to t('common.header_link.profile'), edit_user_registration_path
+        %li#sign_out_tab= link_to t('common.header_link.sign_out'), destroy_user_session_path
       - else
-        %li= link_to t('common.header_link.sign_in'), new_user_session_path, :id => 'sign_in_tab'
-        %li= link_to t('common.header_link.sign_up'), new_user_registration_path, :id => 'sign_up_tab'
+        %li#sign_in_tab= link_to t('common.header_link.sign_in'), new_user_session_path
+        %li#sign_up_tab= link_to t('common.header_link.sign_up'), new_user_registration_path
+      - unless locale.eql? 'fr'
+        %li#french_tab= link_to t('common.header_link.french'), '/fr'
+      - unless locale.eql? 'en'
+        %li#english_tab= link_to t('common.header_link.english'), '/en'
       

@@ -671,6 +671,10 @@ header li {
   list-style: none;
 }
 /* line 19, ../../app/stylesheets/common/header.sass */
+header li#english_tab, header li#french_tab {
+  float: right;
+}
+/* line 23, ../../app/stylesheets/common/header.sass */
 header ul {
   width: 100%;
   overflow: hidden;
@@ -680,28 +684,28 @@ header ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 26, ../../app/stylesheets/common/header.sass */
+/* line 30, ../../app/stylesheets/common/header.sass */
 header a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 30, ../../app/stylesheets/common/header.sass */
+/* line 34, ../../app/stylesheets/common/header.sass */
 header a:visited {
   color: #428edb;
 }
-/* line 33, ../../app/stylesheets/common/header.sass */
+/* line 37, ../../app/stylesheets/common/header.sass */
 header a:hover {
   color: #428edb;
 }
 
-/* line 36, ../../app/stylesheets/common/header.sass */
-body#pages_home header a#home_tab,
-body#pages_about header a#about_tab,
-body#contacts_new header a#contact_tab,
-body#users_index header a#users_tab,
-body#registrations_edit header a#profile_tab,
-body#sessions_new header a#sign_in_tab,
-body#registrations_new header a#sign_up_tab {
+/* line 40, ../../app/stylesheets/common/header.sass */
+body#pages_home header li#home_tab a,
+body#pages_about header li#about_tab a,
+body#contacts_new header li#contact_tab a,
+body#users_index header li#users_tab a,
+body#registrations_edit header li#profile_tab a,
+body#sessions_new header li#sign_in_tab a,
+body#registrations_new header li#sign_up_tab a {
   color: #222222;
 }
 

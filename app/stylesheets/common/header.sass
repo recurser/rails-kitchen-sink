@@ -16,6 +16,10 @@ header
     line-height: 3em
     list-style: none
     
+    &#english_tab,
+    &#french_tab
+      float: right
+    
   ul
     width: 100%
     overflow: hidden
@@ -33,13 +37,13 @@ header
     &:hover
       color: $header_link_hover
       
-body#pages_home header a#home_tab,
-body#pages_about header a#about_tab,
-body#contacts_new header a#contact_tab,
-body#users_index header a#users_tab,
-body#registrations_edit header a#profile_tab,
-body#sessions_new header a#sign_in_tab,
-body#registrations_new header a#sign_up_tab
+body#pages_home header li#home_tab a,
+body#pages_about header li#about_tab a,
+body#contacts_new header li#contact_tab a,
+body#users_index header li#users_tab a,
+body#registrations_edit header li#profile_tab a,
+body#sessions_new header li#sign_in_tab a,
+body#registrations_new header li#sign_up_tab a
   //text-decoration: underline
   color: $text
   

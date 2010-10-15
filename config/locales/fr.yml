@@ -13,6 +13,8 @@ fr:
         sign_up: "Inscrivez-vous"
         sign_in: "Identifiez-vous"
         sign_out: "Inscrivez-Out"
+        english: "English"
+        french: "Francais"
     footer_copyright_message: "Copyright 2010"
     footer_copyright_link: "Recursive Design"
     

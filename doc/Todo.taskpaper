@@ -1,4 +1,6 @@
 General:
+- Flash messages instead of red boxes for form errors (?)
+- Error messages for signup etc need translation
 - Don't allow users to edit or delete themselves
 - Add instructions on contact page - mails will not be read, test only, visit recursive contact page with suggestions
 - Add user/pass instructions + rebuild timeline info to login page
