@@ -156,6 +156,7 @@ fr:
         current_password: "Mot de passe actuel"
         remember_me: "Se souvenir de moi"
         roles: "Rôles"
+        locked_at: "Verrouillé"
       contact:
         email: "Email"
         subject: "Sous réserve"

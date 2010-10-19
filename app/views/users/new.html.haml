@@ -11,6 +11,7 @@
       = f.input :password, :as => :password 
       = f.input :password_confirmation, :as => :password 
       = f.input :roles, :as => :check_boxes, :collection => @accessible_roles
+      = f.input :locked_at, :as => :boolean
       
     = f.buttons do    
       = f.commit_button :create_this_user

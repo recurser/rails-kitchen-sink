@@ -3,7 +3,7 @@
   %h2= t('users.edit.heading', :email => @user.email)
   
   %p
-    = link_to_if(can?(:delete, @user), t('users.edit.delete_user_link'), @user, :confirm => t('users.edit.delete_user_confirm_popup'), :method => :delete) {}
+    = link_to_if(can?(:destroy, @user), t('users.edit.delete_user_link'), @user, :confirm => t('users.edit.delete_user_confirm_popup'), :method => :delete) {}
     = t('common.or')
     = link_to_if(can?(:read, @user), t('users.edit.all_users_link'), users_path) {} 
   
@@ -16,6 +16,7 @@
       = f.input :password, :as => :password, :hint => t('users.edit.password_hint')
       = f.input :password_confirmation, :as => :password 
       = f.input :roles, :as => :check_boxes, :collection => @accessible_roles
+      = f.input :locked_at, :as => :boolean
       
     = f.buttons do    
       = f.commit_button :update_this_user

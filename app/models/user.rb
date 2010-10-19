@@ -3,9 +3,6 @@ class User < ActiveRecord::Base
   
   has_and_belongs_to_many :roles, :uniq => true
   
-  cattr_reader :per_page
-  @@per_page = 2
-  
   # Sort users by email by default.
   default_scope :order => 'email ASC'
   
@@ -15,16 +12,26 @@ class User < ActiveRecord::Base
          :rememberable, :trackable, :validatable, :lockable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :confirmed_at
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :confirmed_at, :locked_at
     
   def role?(role)
     return !!self.roles.find_by_name(role.to_s.camelize)
   end
   
+  # Skip confirmation emails when admins create users.
   def save_without_confirmation!
     self.skip_confirmation!
     save()
   end
+  
+  # Allow admin user management checkbox to set the locked_at time.
+  def locked_at=(_locked)
+    if _locked.to_i > 0
+      self[:locked_at] = Time.now
+    else
+      self[:locked_at] = nil
+    end
+  end 
   
   # Make sure all users have at least the :user role.
   def role_ids_with_add_user_role=(_role_ids)

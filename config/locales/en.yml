@@ -155,6 +155,7 @@ en:
         current_password: "Current password"
         remember_me: "Remember me"
         roles: "Roles"
+        locked_at: "Locked"
       contact:
         email: "Email"
         subject: "Subject"

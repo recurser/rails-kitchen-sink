@@ -9,13 +9,16 @@ class Ability
       can :create, :all
       can :update, :all
       can :read, :all 
-      # Users can't delete themselves.
+      # Admin users can't delete themselves.
       can :destroy, User do |other_user|
         other_user.try(:id) != user.id
       end
   
     elsif user.role? :user
-      
+      # Regular users can only manage themselves.
+      can :manage, User do |action, other_user|
+        other_user.try(:id) == user.id
+      end
     end
   end
   

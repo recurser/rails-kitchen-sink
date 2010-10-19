@@ -7,10 +7,11 @@ describe UsersController do
   render_views
   
   before(:each) do
-    user_role  = Factory(:role, :name => 'User')
-    admin_role = Factory(:role, :name => 'Admin')
-    @user  = Factory(:user, :roles => [user_role])
-    @admin = Factory(:user, :roles => [user_role, admin_role], :email => 'admin@test.com')
+    user_role   = Factory(:role, :name => 'User')
+    admin_role  = Factory(:role, :name => 'Admin')
+    @user       = Factory(:user, :roles => [user_role])
+    @other_user = Factory(:user, :roles => [user_role], :email => 'other_user@test.com')
+    @admin      = Factory(:user, :roles => [user_role, admin_role], :email => 'admin@test.com')
   end
   
   describe 'With an un-authorized user' do
@@ -45,26 +46,36 @@ describe UsersController do
     end
     
     describe 'GET *show*' do
-      it 'should redirect to the home page' do
-        get :show, :id => @user
+      it 'should redirect to the home page if we access another user' do
+        get :show, :id => @other_user
         response.should redirect_to(root_path)
       end
 
-      it 'should have a flash.now message' do
-        get :show, :id => @user
+      it 'should have a flash.now message if we access another user' do
+        get :show, :id => @other_user
         flash.now[:error].should =~ /not authorized/i
+      end
+      
+      it 'should be successful if the user accesses themselves' do
+        get :show, :id => @user
+        response.should be_success
       end
     end
     
     describe 'GET *edit*' do
-      it 'should redirect to the home page' do
-        get :edit, :id => @user
+      it 'should redirect to the home page if we access another user' do
+        get :edit, :id => @other_user
         response.should redirect_to(root_path)
       end
 
-      it 'should have a flash.now message' do
-        get :edit, :id => @user
+      it 'should have a flash.now message if we access another user' do
+        get :edit, :id => @other_user
         flash.now[:error].should =~ /not authorized/i
+      end
+      
+      it 'should be successful if the user accesses themselves' do
+        get :show, :id => @user
+        response.should be_success
       end
     end
   end

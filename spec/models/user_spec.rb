@@ -107,6 +107,29 @@ describe User do
     end
         
   end
+  
+  describe 'locking' do
+
+    before(:each) do
+      Factory(:role, :name => 'User')
+      @user = User.create!(@attr)
+    end
+
+    it 'should accept a locked_at value of 1 and set locked_at to the current timestamp' do
+      ['1', 1].each {|param|
+        @user.locked_at = param
+        @user.locked_at.class.should == ActiveSupport::TimeWithZone
+      }
+    end
+
+    it 'should accept a locked_at value of 0 and set locked_at to nil' do
+      ['0', 0].each {|param|
+        @user.locked_at = '0'
+        @user.locked_at.should == nil
+      }
+    end
+    
+  end
 
   describe 'xml & json rendering' do
 
