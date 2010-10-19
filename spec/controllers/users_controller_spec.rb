@@ -244,6 +244,18 @@ describe UsersController do
         msg = I18n.t('users.flash.user_deleted', :email => @user.email)
         flash.now[:notice].should == msg
       end
+       
+      it 'should not allow admins to delete themselves' do
+        lambda do
+          post :destroy, :id => @admin
+        end.should change(User, :count).by(0)
+        flash.now[:error].should =~ /not authorized/i
+      end
+       
+      it 'should have a flash.now message if an admin tries to delete themselves' do
+        post :destroy, :id => @admin
+        flash.now[:error].should =~ /not authorized/i
+      end
       
     end
   

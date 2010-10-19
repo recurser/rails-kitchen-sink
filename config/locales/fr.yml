@@ -25,6 +25,8 @@ fr:
     title_new: "Contactez-nous"
     new:
       heading: "Exemple Formulaire de contact"
+      email_explanation:              "Bien que ce soit un formulaire de contact pleinement opérationnel, il n'est pas mis en place pour être lu par quiconque pour l'application de cette démo."
+      contact_us_explanation:         "Si vous avez des suggestions ou des commentaires, s'il vous plaît <a href='http://recursive-design.com/contact/'>a nous contacter directement</a> via notre site plutôt que d'utiliser ce formulaire."
     flash:
       message_sent: "Votre message a été envoyé."
       invalid_form_warning: "Il y avait un problème d'envoyer votre message."

@@ -24,6 +24,8 @@ en:
     title_new:                        "Contact Us"
     new:
       heading:                        "Example Contact Form"
+      email_explanation:              "While this is a fully-functioning contact form, emails aren't set up to be read by anyone for the purposes of this demo."
+      contact_us_explanation:         "If you have any suggestions or feedback, please <a href='http://recursive-design.com/contact/'>contact us directly</a> via our site rather than using this form."
     flash:
       message_sent:                   "Your message has been sent."
       invalid_form_warning:           "There was a problem sending your message."
