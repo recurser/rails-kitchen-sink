@@ -18,6 +18,9 @@ en:
       user:
         signed_in: "You are now signed in."
         signed_out: "You are now signed out. Come back soon!"
+      new:
+        login_explanation: "To sign in, use admin@recursive-design.com/123456 or user@recursive-design.com/123456. Please do not delete the test users."
+        rebuild_explanation: "The database will be rebuilt automatically every hour."
     passwords:
       send_instructions: "You will receive an email with instructions about how to reset your password in a few minutes."
       updated: "Your password was changed successfully. You are now signed in."

@@ -1,11 +1,12 @@
 General:
+- Test pagination for user list
 - Flash messages instead of red boxes for form errors (?)
 - Error messages for signup etc need translation
 - Don't allow users to edit or delete themselves
 - Add instructions on contact page - mails will not be read, test only, visit recursive contact page with suggestions
-- Add user/pass instructions + rebuild timeline info to login page
 - Add lock checkbox for user edit
 - Add html5boilerplate
+- Add user/pass instructions + rebuild timeline info to login page @done
 - Fill in Home and About pages with real info @done
 - Add links to the project page @done
 - Add real contact page @done

@@ -8,7 +8,7 @@
     = link_to_if(can?(:read, @user), t('users.edit.all_users_link'), users_path) {} 
   
   = semantic_form_for @user do |f|
-    
+  
     = render 'shared/error_messages', :object => @user
     
     = f.inputs do
@@ -18,7 +18,7 @@
       = f.input :roles, :as => :check_boxes, :collection => @accessible_roles
       
     = f.buttons do    
-      = f.commit_button :update
+      = f.commit_button :update_this_user
       = t('common.or')
       = link_to_if(can?(:read, User), t('users.new.cancel_link'), users_path) {}
 

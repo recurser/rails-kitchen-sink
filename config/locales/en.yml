@@ -16,6 +16,7 @@ en:
         french:                       "Français"
     footer_copyright_message:         "Copyright 2010"
     footer_copyright_link:            "Recursive Design"
+    error_message_heading:            "Sorry, there was a problem!"
     
     
     
@@ -151,6 +152,7 @@ en:
         password_confirmation: "Confirm password"
         current_password: "Current password"
         remember_me: "Remember me"
+        roles: "Roles"
       contact:
         email: "Email"
         subject: "Subject"
@@ -168,4 +170,6 @@ en:
       change_password: "Change password"
       resend_unlock: "Resend instructions"
       send_message: "Send message"
-  
+      create_this_user: "Create this user"
+      update_this_user: "Update this user"
+

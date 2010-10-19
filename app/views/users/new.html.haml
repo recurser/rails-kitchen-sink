@@ -13,7 +13,7 @@
       = f.input :roles, :as => :check_boxes, :collection => @accessible_roles
       
     = f.buttons do    
-      = f.commit_button :update
+      = f.commit_button :create_this_user
       = t('common.or')
       = link_to_if(can?(:read, User), t('users.new.cancel_link'), users_path) {}
 

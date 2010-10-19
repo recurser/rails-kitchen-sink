@@ -19,6 +19,9 @@ fr:
       user:
         signed_in: "Vous êtes maintenant signé en"
         signed_out: "Vous êtes maintenant déconnecté. Revenez bientôt!"
+      new:
+        login_explanation: "Pour vous connecter, utilisez admin@recursive-design.com/123456 ou user@recursive-design.com/123456. S'il vous plaît ne pas supprimer les utilisateurs de test."
+        rebuild_explanation: "La base de données sera reconstruit automatiquement toutes les heures."
     passwords:
       send_instructions: "Vous recevrez un email avec les instructions sur la façon de réinitialiser votre mot de passe dans quelques minutes."
       updated: "Votre mot de passe a été changé avec succès. Vous êtes maintenant signé en"

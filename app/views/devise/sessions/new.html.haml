@@ -2,6 +2,10 @@
 .form
   %h2= t('devise.sessions.new.heading')
   
+  %p= t('devise.sessions.new.login_explanation')
+  
+  %p= t('devise.sessions.new.rebuild_explanation')
+  
   = semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
   
     = devise_error_messages!
