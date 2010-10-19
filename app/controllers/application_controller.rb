@@ -1,4 +1,6 @@
+# Base controller for the application.
 class ApplicationController < ActionController::Base
+  
   protect_from_forgery
   
   before_filter :set_locale
@@ -11,7 +13,8 @@ class ApplicationController < ActionController::Base
   
   # Get roles accessible by the current user
   def accessible_roles
-    # Don't display user role - it gets added automatically and should be transparent to the system.
+    # Don't display user role - it gets added automatically and should be 
+    # transparent to the system.
     @accessible_roles = Role.accessible_by(current_ability, :read) - [Role.by_name(:user)]
   end
  

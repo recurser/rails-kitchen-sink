@@ -13,7 +13,8 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :confirmed_at, :locked_at
-    
+  
+  # Returns true if this user has the specified role, false otherwise.
   def role?(role)
     return !!self.roles.find_by_name(role.to_s.camelize)
   end

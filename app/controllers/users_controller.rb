@@ -1,11 +1,16 @@
+# Handles CRUD for user administration.
 class UsersController < ApplicationController
   
+  # Make the current user only accessible to certain actions.
   before_filter :get_user, :only => [:index, :new, :edit]
-  before_filter :accessible_roles, :only => [:new, :edit, :show, :update, :create]
   
+  # Populate the list of :accessible_roles for certain actions.
+  before_filter :accessible_roles, :only => [:new, :edit, :update, :create]
+  
+  # Protect with CanCan.
   load_and_authorize_resource
   
- 
+  # Displays a paginated list of all users in the ysytem.
   def index
     @title = 'users.title_index'
     @users = User.accessible_by(current_ability, :index).paginate(:page => params[:page])
@@ -16,7 +21,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Displays a blank form for creating a new user.
   def new
     @title = 'users.title_new'
     respond_to do |format|
@@ -26,7 +31,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Accepts a POST, and creates a new user from the given params if valid.
   def create
     @title = 'users.title_create'
     @user = User.new(params[:user])
@@ -50,7 +55,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Displays details of the specified user.
   def show
     @title = 'users.title_show'
     respond_to do |format|
@@ -60,7 +65,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Displays a form to edit the specified user.
   def edit
     @title = 'users.title_edit'
     respond_to do |format|
@@ -70,7 +75,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Accepts a POST, and updates the specified user with the given params if valid.
   def update
     # Don't try to update the password if none has been provided.
     if params[:user][:password].blank?
@@ -94,7 +99,7 @@ class UsersController < ApplicationController
     end
   end
   
-  
+  # Accepts a POST, and destroys the specified user.
   def destroy
     @title = 'users.title_destroy'
     flash[:notice] = t 'users.flash.user_deleted', :email => @user.email
@@ -106,5 +111,5 @@ class UsersController < ApplicationController
       format.html { redirect_to :action => :index }      
     end
   end
-  
+
 end
