@@ -1,6 +1,6 @@
 General:
-- Test pagination for user list
 - Add lock checkbox for user edit
+- Test pagination for user list @done
 - Don't allow users to edit or delete themselves @done
 - Add instructions on contact page - mails will not be read, test only, visit recursive contact page with suggestions @done
 - Add user/pass instructions + rebuild timeline info to login page @done

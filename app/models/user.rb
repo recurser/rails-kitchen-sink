@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
   
   has_and_belongs_to_many :roles, :uniq => true
   
+  cattr_reader :per_page
+  @@per_page = 2
+  
   # Sort users by email by default.
   default_scope :order => 'email ASC'
   

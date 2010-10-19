@@ -5,7 +5,7 @@
   
   %p= link_to_if(can?(:create, User), t('users.index.create_user_link'), new_user_path) {}
   
-  = will_paginate
+  = will_paginate @users
   
   %table
     %tr
@@ -15,7 +15,7 @@
       %th
     = render @users
   
-  = will_paginate
+  = will_paginate @users
   
 .clear
   
