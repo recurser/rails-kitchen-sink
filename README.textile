@@ -4,3 +4,70 @@ h2. License
 This project is distributed under the "MIT License":http://en.wikipedia.org/wiki/MIT_license. See the "License.txt":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/LICENSE.txt file for details.
 
 h2. About
+
+We needed a solid base to build our own rails projects from. Since integrating all these disparate pieces isn't the easiest thing in the world, we decided to release this sample site in the hope that it would save you time as well.
+
+This demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and build your dream app.
+
+h2. Installation
+
+To get started, first download the source via git
+
+{% highlight bash %}
+$ git clone git://recursive-design.com/rails-kitchen-sink.git
+$ cd rails-kitchen-sink
+{% endhighlight %} 
+
+Next, install the requisite gems :
+
+{% highlight bash %}
+$ bundle install
+{% endhighlight %} 
+
+Set up the database :
+
+{% highlight bash %}
+$ rake db:setup
+{% endhighlight %} 
+
+Finally, run the local development server to try it out :
+
+{% highlight bash %}
+$ rails server
+{% endhighlight %} 
+
+The demo application should now be available at "http://localhost:3000/":http://localhost:3000/.
+
+h2. What's Included?
+
+* "HAML":http://haml-lang.com/ Templates.
+* "CoffeeScript":http://jashkenas.github.com/coffee-script/ support.
+* "metric_fu":http://metric-fu.rubyforge.org/
+* Full "RSpec":http://rspec.info/ test suite
+* "960":http://960.gs/ CSS grid system
+* "Jammit":http://documentcloud.github.com/jammit/ asset packaging
+* "Formtastic":http://github.com/justinfrench/formtastic forms
+
+h2. Testing
+
+_Rails Kitchen Sink_ comes pre-configured for "Spork":http://github.com/timcharper/spork and "autotest":http://www.zenspider.com/ZSS/Products/ZenTest/#rsn support. I generally work by running _spork_ in one terminal :
+
+{% highlight bash %}
+$ cd rails-kitchen-sink
+$ spork
+{% endhighlight %} 
+
+... and running _autotest_ in another :
+
+{% highlight bash %}
+$ cd rails-kitchen-sink
+$ autotest
+{% endhighlight %} 
+
+Autotest will run the test suite automatically whenever you save changes, and if you're working on OSX, it will provide "Growl":http://growl.info/ feedback every time the test suite is run :
+
+!http://recursive-design.com/images/projects/rails-kitchen-sink/autotest_growl_notification.png!
+
+h2. Bug Reports
+
+If you come across any problems, please "create a ticket":http://recursive-design.com/code/p/rails-kitchen-sink/issues/ and we'll try to get it fixed as soon as possible.
