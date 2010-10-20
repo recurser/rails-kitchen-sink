@@ -7,7 +7,7 @@ h2. About
 
 We needed a solid base to build our own rails projects from. Since integrating all these disparate pieces isn't the easiest thing in the world, we decided to release this sample site in the hope that it would save you time as well.
 
-This demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and build your dream app.
+The demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and build your dream app.
 
 h2. Installation
 
@@ -136,13 +136,15 @@ You should also install the free "SendGrid":http://sendgrid.com/ add-on for emai
 $ heroku addons:add sendgrid:free
 {% endhighlight %}
 
+Your application should now be available at "http://evening-beach-14.heroku.com/":http://evening-beach-14.heroku.com/ (substitute the domain you received from _git push heroku_ here).
+
 Whenever you push changes to git, you can update heroku by doing _git push heroku_ again.
 
 h2. Git hooks
 
 h2. Internationalization
 
-_Rails Kitchen Sink_ is fully I18N-ready, but unfortunately the only translation is currently (i assume fairly badly, being unable to read it) auto-generated-french from Google translate. If you'd like to contribute a translation, you can start by looking at the "translation files":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/config/locales and "static pages":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/app/views/pages. There's not a great deal of text to translate, so if anyone is feeling particularly generous and/or bored, additional translations would be very much appreciated! 
+_Rails Kitchen Sink_ is fully I18N-ready, but unfortunately the only translation is currently (i assume fairly badly) auto-generated-french from Google translate. If you'd like to contribute a translation, you can start by looking at the "translation files":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/config/locales and "static pages":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/app/views/pages. There's not a great deal of text to translate, so if anyone is feeling particularly generous and/or bored, additional translations would be very much appreciated! 
 
 h2. Stylesheets
 
