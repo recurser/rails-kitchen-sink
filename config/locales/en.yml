@@ -21,8 +21,8 @@ en:
     
     
   contacts:
-    title_new:                        "Contact Us"
     new:
+      title:                          "Contact Us"
       heading:                        "Example Contact Form"
       email_explanation:              "While this is a fully-functioning contact form, emails aren't set up to be read by anyone for the purposes of this demo."
       contact_us_explanation:         "If you have any suggestions or feedback, please <a href='http://recursive-design.com/contact/'>contact us directly</a> via our site rather than using this form."
@@ -33,9 +33,10 @@ en:
       
     
   pages:
-    title_home:                       "Home"
-    title_contact:                    "Contact"
-    title_about:                      "About"
+    home:
+      title:                          "Home"
+    about:
+      title:                          "About"
     
     
   
@@ -49,30 +50,30 @@ en:
       
     
   users:
-    title_index:                      "Manage Users"
-    title_edit:                       "Edit User"
-    title_new:                        "New User"
-    title_show:                       "View User"
     flash:
       user_updated:                   "User %{email} has been updated."
       user_deleted:                   "User %{email} has been deleted."
       user_created:                   "User %{email} has been created."
     index:
+      title:                          "Manage Users"
       heading:                        "All Users"
       create_user_link:               "Create a new user"
       user_list:
         email_heading:                "Email"
         role_heading:                 "Roles"
     edit:
+      title:                          "Edit User"
       heading:                        "Editing %{email}"
       delete_user_link:               "Delete this user"
       all_users_link:                 "view all users"
       delete_user_confirm_popup:      "Are you sure? Click the 'OK' button to delete this user."
       password_hint:                  "(leave this blank if you don't want to change it)"
     new:
+      title:                          "New User"
       heading:                        "Create a new user"
       cancel_link:                    "cancel"
     show:
+      title:                          "View User"
       heading:                        "Viewing %{email}"
       edit_user_link:                 "Edit this user"
       all_users_link:                 "view all users"

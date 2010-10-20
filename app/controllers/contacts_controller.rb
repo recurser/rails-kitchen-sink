@@ -3,7 +3,6 @@ class ContactsController < ApplicationController
   
   # Displays a blank contact form.
   def new
-    @title = 'contacts.title_new'
     # id is used to deal with form
     @contact = Contact.new(:id => 1)
   end

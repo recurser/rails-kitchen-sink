@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   
   protect_from_forgery
   
-  before_filter :set_locale
+  before_filter :set_locale, :set_title
   
   # Redirect un-authorized accesses to the home page, and display a message.
   rescue_from CanCan::AccessDenied do |exception|
@@ -32,6 +32,11 @@ class ApplicationController < ActionController::Base
   # is nil then I18n.default_locale will be used
   def set_locale
     I18n.locale = params[:locale]
+  end
+  
+  # Set the title of the current page based on the controller and action name.
+  def set_title
+     @title = "#{controller_name}.#{action_name}.title"
   end
   
 end

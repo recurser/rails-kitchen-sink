@@ -15,7 +15,7 @@ describe ContactsController do
     
     it 'should have the correct title' do
       get :new
-      response.should have_selector('title', :content => I18n.t('contacts.title_new'))
+      response.should have_selector('title', :content => I18n.t('contacts.new.title'))
     end    
     
   end

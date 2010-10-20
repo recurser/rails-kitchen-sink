@@ -96,7 +96,7 @@ describe UsersController do
   
       it 'should have the correct title' do
         get :index
-        response.should have_selector('title', :content => I18n.t('users.title_index'))
+        response.should have_selector('title', :content => I18n.t('users.index.title'))
       end    
 
       it 'should render the *index* page' do
@@ -139,7 +139,7 @@ describe UsersController do
   
       it 'should have the correct title' do
         get :new
-        response.should have_selector('title', :content => I18n.t('users.title_new'))
+        response.should have_selector('title', :content => I18n.t('users.new.title'))
       end    
 
       it 'should render the *new* page' do
@@ -157,7 +157,7 @@ describe UsersController do
 
       it 'should have the correct title' do
         get :show, :id => @user
-        response.should have_selector('title', :content => I18n.t('users.title_show'))
+        response.should have_selector('title', :content => I18n.t('users.show.title'))
       end   
 
       it 'should render the *show* page' do
@@ -175,7 +175,7 @@ describe UsersController do
   
       it 'should have the correct title' do
         get :edit , :id => @user
-        response.should have_selector('title', :content => I18n.t('users.title_edit'))
+        response.should have_selector('title', :content => I18n.t('users.edit.title'))
       end   
 
       it 'should render the *edit* page' do

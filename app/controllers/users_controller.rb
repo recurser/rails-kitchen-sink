@@ -12,7 +12,6 @@ class UsersController < ApplicationController
   
   # Displays a paginated list of all users in the ysytem.
   def index
-    @title = 'users.title_index'
     @users = User.accessible_by(current_ability, :index).paginate(:page => params[:page])
     respond_to do |format|
       format.json { render :json => @users }
@@ -23,7 +22,6 @@ class UsersController < ApplicationController
   
   # Displays a blank form for creating a new user.
   def new
-    @title = 'users.title_new'
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
@@ -33,7 +31,6 @@ class UsersController < ApplicationController
   
   # Accepts a POST, and creates a new user from the given params if valid.
   def create
-    @title = 'users.title_create'
     @user = User.new(params[:user])
     
     if @user.save_without_confirmation!
@@ -57,7 +54,6 @@ class UsersController < ApplicationController
   
   # Displays details of the specified user.
   def show
-    @title = 'users.title_show'
     respond_to do |format|
       format.json { render :json => @user }
       format.xml  { render :xml => @user }
@@ -67,7 +63,6 @@ class UsersController < ApplicationController
   
   # Displays a form to edit the specified user.
   def edit
-    @title = 'users.title_edit'
     respond_to do |format|
       format.json { render :json => @user }   
       format.xml  { render :xml => @user }
@@ -101,7 +96,6 @@ class UsersController < ApplicationController
   
   # Accepts a POST, and destroys the specified user.
   def destroy
-    @title = 'users.title_destroy'
     flash[:notice] = t 'users.flash.user_deleted', :email => @user.email
     @user.destroy
  

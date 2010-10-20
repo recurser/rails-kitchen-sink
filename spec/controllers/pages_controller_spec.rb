@@ -14,7 +14,7 @@ describe PagesController do
     
     it 'should have the correct title' do
       get :home
-      response.should have_selector('title', :content => I18n.t('pages.title_home'))
+      response.should have_selector('title', :content => I18n.t('pages.home.title'))
     end    
   end
 
@@ -26,7 +26,7 @@ describe PagesController do
     
     it 'should have the correct title' do
       get :about
-      response.should have_selector('title', :content => I18n.t('pages.title_about'))
+      response.should have_selector('title', :content => I18n.t('pages.about.title'))
     end
   end
 

@@ -22,8 +22,8 @@ fr:
     
     
   contacts:
-    title_new: "Contactez-nous"
     new:
+      title: "Contactez-nous"
       heading: "Exemple Formulaire de contact"
       email_explanation:              "Bien que ce soit un formulaire de contact pleinement opérationnel, il n'est pas mis en place pour être lu par quiconque pour l'application de cette démo."
       contact_us_explanation:         "Si vous avez des suggestions ou des commentaires, s'il vous plaît <a href='http://recursive-design.com/contact/'>a nous contacter directement</a> via notre site plutôt que d'utiliser ce formulaire."
@@ -34,9 +34,10 @@ fr:
       
     
   pages:
-    title_home: "Accueil"
-    title_contact: "Contact"
-    title_about: "A propos"
+    home:
+      title: "Accueil"
+    about:
+      title: "A propos"
     
     
   
@@ -50,30 +51,30 @@ fr:
       
     
   users:
-    title_index: "Gérer les utilisateurs"
-    title_edit: "Modifier l'utilisateur"
-    title_new: "Nouvel utilisateur"
-    title_show: "Voir utilisateur"
     flash:
       user_updated: "L'utilisateur %{email} a été mis à jour."
       user_deleted: "L'utilisateur %{email} a été supprimé."
       user_created: "L'utilisateur %{email} a été créé."
     index:
+      title: "Gérer les utilisateurs"
       heading: "Tous les utilisateurs"
       create_user_link: "Créer un nouvel utilisateur"
       user_list:
         email_heading: "Email"
         role_heading: "Rôles"
     edit:
+      title: "Modifier l'utilisateur"
       heading: "Modification %{email}"
       delete_user_link: "Supprimer cet utilisateur"
       all_users_link: "afficher tous les utilisateurs"
       delete_user_confirm_popup: "Etes-vous sûr? Cliquez sur le bouton 'OK' pour supprimer cet utilisateur."
       password_hint: "(Laisser ce champ vide si vous ne voulez pas le changer)"
     new:
+      title: "Nouvel utilisateur"
       heading: "Créer un nouvel utilisateur"
       cancel_link: "annuler"
     show:
+      title: "Voir utilisateur"
       heading: "Affichage d'un %{email}"
       edit_user_link: "Modifier cet utilisateur"
       all_users_link: "afficher tous les utilisateurs"

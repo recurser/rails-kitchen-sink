@@ -1,5 +1,7 @@
+# Used to send contact emails to the site admin.
 class Notifier < ActionMailer::Base
   
+  # Sends the contact email using the parameters from the given Contact instance.
   def contact_notification(contact)
     @contact = contact
     
