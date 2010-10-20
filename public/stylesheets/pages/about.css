@@ -27,6 +27,11 @@ body#pages_about .item p {
   font-style: italic;
 }
 /* line 19, ../../../app/stylesheets/pages/about.sass */
+body#pages_about .item ul {
+  margin: 0;
+  font-style: italic;
+}
+/* line 25, ../../../app/stylesheets/pages/about.sass */
 body#pages_about .item a.read_more {
   display: block;
   margin-bottom: 0.5em;
