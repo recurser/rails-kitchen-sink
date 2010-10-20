@@ -16,25 +16,25 @@ To get started, first download the source via git
 {% highlight bash %}
 $ git clone git://recursive-design.com/rails-kitchen-sink.git
 $ cd rails-kitchen-sink
-{% endhighlight %} 
+{% endhighlight %}
 
 Next, install the requisite gems :
 
 {% highlight bash %}
 $ bundle install
-{% endhighlight %} 
+{% endhighlight %}
 
 Set up the database :
 
 {% highlight bash %}
 $ rake db:setup
-{% endhighlight %} 
+{% endhighlight %}
 
 Finally, run the local development server to try it out :
 
 {% highlight bash %}
 $ rails server
-{% endhighlight %} 
+{% endhighlight %}
 
 The demo application should now be available at "http://localhost:3000/":http://localhost:3000/.
 
@@ -55,14 +55,21 @@ _Rails Kitchen Sink_ comes pre-configured for "Spork":http://github.com/timcharp
 {% highlight bash %}
 $ cd rails-kitchen-sink
 $ spork
-{% endhighlight %} 
+Using RSpec
+Loading Spork.prefork block...
+Spork is ready and listening on 8989!
+{% endhighlight %}
 
 ... and running _autotest_ in another :
 
 {% highlight bash %}
 $ cd rails-kitchen-sink
 $ autotest
-{% endhighlight %} 
+........................................................................................
+
+Finished in 29.27 seconds
+88 examples, 0 failures
+{% endhighlight %}
 
 Autotest will run the test suite automatically whenever you save changes, and if you're working on OSX, it will provide "Growl":http://growl.info/ feedback every time the test suite is run :
 
