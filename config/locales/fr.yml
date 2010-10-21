@@ -119,13 +119,17 @@ fr:
         resend_link: "Débloquer votre compte"
     passwords:
       new:
+        title: "Mot de passe oublié?"
         heading: "Mot de passe oublié?"
       edit:
+        title: "Changez votre mot de passe"
         heading: "Changez votre mot de passe"
     registrations:
       new:
+        title: "Inscrivez-vous sur"
         heading: "Inscrivez-vous sur"
       edit:
+        title: "Modifiez votre profil"
         heading: "Modifiez votre profil"
         cancel_account_heading: "Annuler votre compte"
         cancel_account_description: "Malheureux avec notre service?"
@@ -134,9 +138,11 @@ fr:
         password_hint: "(Laisser ce champ vide si vous ne voulez pas le changer)"
     unlocks:
       new:
+        title: "Renvoyer déverrouiller instructions"
         heading: "Renvoyer déverrouiller instructions"
     sessions:
       new:
+        title: "Identifiez-vous"
         heading: "Identifiez-vous"
     shared:
       _links:

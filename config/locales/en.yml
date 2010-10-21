@@ -118,13 +118,17 @@ en:
         resend_link: "Unlock your account"
     passwords:
       new:
+        title: "Forgot your password?"
         heading: "Forgot your password?"
       edit:
+        title: "Change your password"
         heading: "Change your password"
     registrations:
       new:
+        title: "Sign up"
         heading: "Sign up"
       edit:
+        title: "Edit your profile"
         heading: "Edit your profile"
         cancel_account_heading: "Cancel your account"
         cancel_account_description: "Unhappy with our service?"
@@ -133,9 +137,11 @@ en:
         password_hint: "(leave this blank if you don't want to change it)"
     unlocks:
       new:
+        title: "Resend unlock instructions"
         heading: "Resend unlock instructions"
     sessions:
       new:
+        title: "Sign in"
         heading: "Sign in"
     shared:
       _links:
