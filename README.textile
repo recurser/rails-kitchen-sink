@@ -1,9 +1,9 @@
 
 h2. About
 
-I needed a solid base to build my own rails projects from. Since integrating all these disparate pieces isn't the easiest thing in the world, I decided to release this sample site in the hope that it would save you time as well.
+I needed a solid base to build my own rails projects from. Since integrating all these disparate pieces isn't the easiest thing in the world, I decided to release this sample site in the hope that it would save you some time as well.
 
-The demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and build your dream app.
+The demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and get started.
 
 h2. Demo Site
 
