@@ -9,6 +9,10 @@ I needed a solid base to build my own rails projects from. Since integrating all
 
 The demo application is designed to provide a solid, generic skeleton to base your next rails project on, and includes everything you'll need to dive straight in and build your dream app.
 
+h2. Demo Site
+
+You can try out a live demo of the project at "railskitchensink.com":http://railskitchensink.com/. The database will be automatically re-generated every hour, so don't be surprised if any changes disappear.
+
 h2. Installation
 
 To get started, first download the source via git
@@ -91,7 +95,7 @@ Created http://evening-beach-14.heroku.com/ | git@heroku.com:evening-beach-14.gi
 Git remote heroku added
 {% endhighlight %}
 
-The _evening-beach-14_ part will vary depending on what name Heroku chooses for your application.
+The _evening-beach-14_ part will vary depending on the name Heroku chooses for your application.
 
 To push your newly created application to Heroku, do a _git push heroku master_ :
 
@@ -156,7 +160,7 @@ jammit
 
 The first two commands generate the CSS and Javascript respectively, and the 3rd command packages them up using Jammit. 
 
-The _jammit_ command doesn’t seem to be working 100% reliably in the pre-commit hook for reasons I don;t currently understand - if your changes aren't reflected on Heroku you may have to run the _jammit_ command by hand and re-commit. I hope to fix this problem in the near future, and any suggestions would be appreciated.
+The _jammit_ command doesn’t seem to be working 100% reliably in the pre-commit hook for reasons I don't currently understand - if your changes aren't reflected on Heroku you may have to run the _jammit_ command by hand and re-commit. I hope to fix this problem in the near future, and any suggestions would be appreciated.
 
 h2. Internationalization
 
