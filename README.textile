@@ -1,8 +1,4 @@
 
-h2. License
-
-This project is distributed under the "MIT License":http://en.wikipedia.org/wiki/MIT_license. See the "License.txt":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/LICENSE.txt file for details.
-
 h2. About
 
 I needed a solid base to build my own rails projects from. Since integrating all these disparate pieces isn't the easiest thing in the world, I decided to release this sample site in the hope that it would save you time as well.
@@ -12,6 +8,10 @@ The demo application is designed to provide a solid, generic skeleton to base yo
 h2. Demo Site
 
 You can try out a live demo of the project at "railskitchensink.com":http://railskitchensink.com/. The database will be automatically re-generated every hour, so don't be surprised if any changes disappear.
+
+h2. License
+
+This project is distributed under the "MIT License":http://en.wikipedia.org/wiki/MIT_license. See the "License.txt":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/LICENSE.txt file for details.
 
 h2. Installation
 
