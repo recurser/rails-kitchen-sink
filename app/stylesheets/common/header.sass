@@ -2,17 +2,14 @@
 @import 960/grid
 @import colors
 
-header 
+// IE won't select on <header> or <nav> - need to add a <div> container as well unfortunately.
+#menu_container 
   border-bottom: 1px solid $header_border
   background-color: $header_bg
   height: auto
   color: $header_text
   margin-bottom: 2em
   height: 3em
-
-// IE doesn't like selecting anything under header - use an id on the UL instead.
-ul#header_menu
-  overflow: hidden
   
   li
     float: left
@@ -41,13 +38,12 @@ ul#header_menu
     &:hover
       color: $header_link_hover
       
-body#pages_home header li#home_tab a,
-body#pages_about header li#about_tab a,
-body#contacts_new header li#contact_tab a,
-body#users_index header li#users_tab a,
+body#pages_home         header li#home_tab a,
+body#pages_about        header li#about_tab a,
+body#contacts_new       header li#contact_tab a,
+body#users_index        header li#users_tab a,
 body#registrations_edit header li#profile_tab a,
-body#sessions_new header li#sign_in_tab a,
-body#registrations_new header li#sign_up_tab a
-  //text-decoration: underline
+body#sessions_new       header li#sign_in_tab a,
+body#registrations_new  header li#sign_up_tab a
   color: $text
   

@@ -1,5 +1,5 @@
-/* line 5, ../../../app/stylesheets/common/header.sass */
-header {
+/* line 6, ../../../app/stylesheets/common/header.sass */
+#menu_container {
   border-bottom: 1px solid #dfdfdf;
   background-color: #fafafa;
   height: auto;
@@ -7,24 +7,19 @@ header {
   margin-bottom: 2em;
   height: 3em;
 }
-
 /* line 14, ../../../app/stylesheets/common/header.sass */
-ul#header_menu {
-  overflow: hidden;
-}
-/* line 17, ../../../app/stylesheets/common/header.sass */
-ul#header_menu li {
+#menu_container li {
   float: left;
   margin: 0 0.5em;
   line-height: 3em;
   list-style: none;
 }
-/* line 23, ../../../app/stylesheets/common/header.sass */
-ul#header_menu li#english_tab, ul#header_menu li#french_tab {
+/* line 20, ../../../app/stylesheets/common/header.sass */
+#menu_container li#english_tab, #menu_container li#french_tab {
   float: right;
 }
-/* line 27, ../../../app/stylesheets/common/header.sass */
-ul#header_menu ul {
+/* line 24, ../../../app/stylesheets/common/header.sass */
+#menu_container ul {
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -33,21 +28,21 @@ ul#header_menu ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 34, ../../../app/stylesheets/common/header.sass */
-ul#header_menu a {
+/* line 31, ../../../app/stylesheets/common/header.sass */
+#menu_container a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 38, ../../../app/stylesheets/common/header.sass */
-ul#header_menu a:visited {
+/* line 35, ../../../app/stylesheets/common/header.sass */
+#menu_container a:visited {
   color: #428edb;
 }
-/* line 41, ../../../app/stylesheets/common/header.sass */
-ul#header_menu a:hover {
+/* line 38, ../../../app/stylesheets/common/header.sass */
+#menu_container a:hover {
   color: #428edb;
 }
 
-/* line 44, ../../../app/stylesheets/common/header.sass */
+/* line 41, ../../../app/stylesheets/common/header.sass */
 body#pages_home header li#home_tab a,
 body#pages_about header li#about_tab a,
 body#contacts_new header li#contact_tab a,
