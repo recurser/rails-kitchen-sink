@@ -664,18 +664,22 @@ header {
   height: 3em;
 }
 
-/* line 15, ../../app/stylesheets/common/header.sass */
+/* line 14, ../../app/stylesheets/common/header.sass */
+ul#header_menu {
+  overflow: hidden;
+}
+/* line 17, ../../app/stylesheets/common/header.sass */
 ul#header_menu li {
   float: left;
   margin: 0 0.5em;
   line-height: 3em;
   list-style: none;
 }
-/* line 21, ../../app/stylesheets/common/header.sass */
+/* line 23, ../../app/stylesheets/common/header.sass */
 ul#header_menu li#english_tab, ul#header_menu li#french_tab {
   float: right;
 }
-/* line 25, ../../app/stylesheets/common/header.sass */
+/* line 27, ../../app/stylesheets/common/header.sass */
 ul#header_menu ul {
   width: 100%;
   overflow: hidden;
@@ -685,21 +689,21 @@ ul#header_menu ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 32, ../../app/stylesheets/common/header.sass */
+/* line 34, ../../app/stylesheets/common/header.sass */
 ul#header_menu a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 36, ../../app/stylesheets/common/header.sass */
+/* line 38, ../../app/stylesheets/common/header.sass */
 ul#header_menu a:visited {
   color: #428edb;
 }
-/* line 39, ../../app/stylesheets/common/header.sass */
+/* line 41, ../../app/stylesheets/common/header.sass */
 ul#header_menu a:hover {
   color: #428edb;
 }
 
-/* line 42, ../../app/stylesheets/common/header.sass */
+/* line 44, ../../app/stylesheets/common/header.sass */
 body#pages_home header li#home_tab a,
 body#pages_about header li#about_tab a,
 body#contacts_new header li#contact_tab a,
