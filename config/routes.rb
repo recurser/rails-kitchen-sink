@@ -1,4 +1,4 @@
-RecursiveRailsStarter::Application.routes.draw do
+RailsKitchenSink::Application.routes.draw do
 
   scope '(:locale)', :locale => /en|fr/ do
     resources :contacts, :only => [:new, :create]
