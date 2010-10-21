@@ -7,19 +7,20 @@ header {
   margin-bottom: 2em;
   height: 3em;
 }
-/* line 13, ../../../app/stylesheets/common/header.sass */
-header li {
+
+/* line 15, ../../../app/stylesheets/common/header.sass */
+ul#header_menu li {
   float: left;
   margin: 0 0.5em;
   line-height: 3em;
   list-style: none;
 }
-/* line 19, ../../../app/stylesheets/common/header.sass */
-header li#english_tab, header li#french_tab {
+/* line 21, ../../../app/stylesheets/common/header.sass */
+ul#header_menu li#english_tab, ul#header_menu li#french_tab {
   float: right;
 }
-/* line 23, ../../../app/stylesheets/common/header.sass */
-header ul {
+/* line 25, ../../../app/stylesheets/common/header.sass */
+ul#header_menu ul {
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -28,21 +29,21 @@ header ul {
   margin-right: auto;
   width: 960px;
 }
-/* line 30, ../../../app/stylesheets/common/header.sass */
-header a {
+/* line 32, ../../../app/stylesheets/common/header.sass */
+ul#header_menu a {
   font-size: 1.1em;
   color: #428edb;
 }
-/* line 34, ../../../app/stylesheets/common/header.sass */
-header a:visited {
+/* line 36, ../../../app/stylesheets/common/header.sass */
+ul#header_menu a:visited {
   color: #428edb;
 }
-/* line 37, ../../../app/stylesheets/common/header.sass */
-header a:hover {
+/* line 39, ../../../app/stylesheets/common/header.sass */
+ul#header_menu a:hover {
   color: #428edb;
 }
 
-/* line 40, ../../../app/stylesheets/common/header.sass */
+/* line 42, ../../../app/stylesheets/common/header.sass */
 body#pages_home header li#home_tab a,
 body#pages_about header li#about_tab a,
 body#contacts_new header li#contact_tab a,

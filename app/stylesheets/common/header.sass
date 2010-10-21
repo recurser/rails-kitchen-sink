@@ -9,7 +9,9 @@ header
   color: $header_text
   margin-bottom: 2em
   height: 3em
-  
+
+// IE doesn't like selecting anything under header - use an id on the UL instead.
+ul#header_menu  
   li
     float: left
     margin: 0 0.5em

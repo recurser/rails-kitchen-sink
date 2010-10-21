@@ -25,6 +25,7 @@ $ cd rails-kitchen-sink
 Next, install the requisite gems :
 
 {% highlight bash %}
+$ gem install bundler
 $ bundle install
 {% endhighlight %}
 
