@@ -1,5 +1,6 @@
 .bundle
 .rake_tasks~
+.rvmrc
 .sass-cache/*
 db/*.sqlite3*
 log/*.log
