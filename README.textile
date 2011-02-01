@@ -155,13 +155,12 @@ To achieve this, I added a post-commit hook to the repository to generate these 
 #!/bin/sh
 
 compass compile
-exec rake public/javascripts/application.js
+rake public/javascripts/application.js
 jammit
+git add public/assets/common*
 {% endhighlight %}
 
-The first two commands generate the CSS and Javascript respectively, and the 3rd command packages them up using Jammit. 
-
-The _jammit_ command doesn’t seem to be working 100% reliably in the pre-commit hook for reasons I don't currently understand - if your changes aren't reflected on Heroku you may have to run the _jammit_ command by hand and re-commit. I hope to fix this problem in the near future, and any suggestions would be appreciated.
+The first two commands generate the CSS and Javascript respectively, the 3rd command packages them up using Jammit, and the fourth makes sure they are included in the commit.
 
 h2. Internationalization
 
