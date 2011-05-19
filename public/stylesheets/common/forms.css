@@ -1,6 +1,7 @@
 /* line 5, ../../../app/stylesheets/common/forms.sass */
 .form {
   position: relative;
+  position: relative;
   left: 240px;
   display: inline;
   float: left;
