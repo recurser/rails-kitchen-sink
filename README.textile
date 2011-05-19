@@ -11,7 +11,7 @@ You can try out a live demo of the project at "railskitchensink.com":http://rail
 
 h2. License
 
-This project is distributed under the "MIT License":http://en.wikipedia.org/wiki/MIT_license. See the "License.txt":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/LICENSE.txt file for details.
+This project is distributed under the "MIT License":http://en.wikipedia.org/wiki/MIT_license. See the "License":https://github.com/recurser/rails-kitchen-sink/blob/master/LICENSE file for details.
 
 h2. Installation
 
@@ -22,20 +22,20 @@ $ git clone git://recursive-design.com/rails-kitchen-sink.git
 $ cd rails-kitchen-sink
 {% endhighlight %}
 
-Next, install the requisite gems :
+Next, install the requisite gems:
 
 {% highlight bash %}
 $ gem install bundler
 $ bundle install
 {% endhighlight %}
 
-Set up the database :
+Set up the database:
 
 {% highlight bash %}
 $ rake db:setup
 {% endhighlight %}
 
-Finally, run the local development server to try it out :
+Finally, run the local development server to try it out:
 
 {% highlight bash %}
 $ rails s
@@ -45,7 +45,7 @@ The demo application should now be available at "http://localhost:3000/":http://
 
 h2. What's Included?
 
-I've tried to create a sensible base to start build your Rails 3 applications off of, with all the packages I generally use pre-integrated. _Rails Kitchen Sink_ currently combines :
+I've tried to create a sensible base to start build your Rails 3 applications off of, with all the packages I generally use pre-integrated. _Rails Kitchen Sink_ currently combines:
 
 * "Devise":http://github.com/plataformatec/devise authentication.
 * "CanCan":http://github.com/ryanb/cancan authorization.
@@ -60,7 +60,7 @@ I've tried to create a sensible base to start build your Rails 3 applications of
 
 h2. Testing
 
-_Rails Kitchen Sink_ comes pre-configured for "Spork":http://github.com/timcharper/spork and "autotest":http://www.zenspider.com/ZSS/Products/ZenTest/#rsn support. I generally work by running _spork_ in one terminal :
+_Rails Kitchen Sink_ comes pre-configured for "Spork":http://github.com/timcharper/spork and "autotest":http://www.zenspider.com/ZSS/Products/ZenTest/#rsn support. I generally work by running _spork_ in one terminal:
 
 {% highlight bash %}
 $ cd rails-kitchen-sink
@@ -70,7 +70,7 @@ Loading Spork.prefork block...
 Spork is ready and listening on 8989!
 {% endhighlight %}
 
-... and running _autotest_ in another :
+... and running _autotest_ in another:
 
 {% highlight bash %}
 $ cd rails-kitchen-sink
@@ -81,13 +81,13 @@ Finished in 29.27 seconds
 88 examples, 0 failures
 {% endhighlight %}
 
-Autotest will run the test suite automatically whenever you save changes, and if you're working on OSX, it will provide "Growl":http://growl.info/ feedback every time the test suite is run :
+Autotest will run the test suite automatically whenever you save changes, and if you're working on OSX, it will provide "Growl":http://growl.info/ feedback every time the test suite is run:
 
 !http://recursive-design.com/images/projects/rails-kitchen-sink/autotest_growl_notification.png!
 
 h2. Deploying To Heroku
 
-To deploy the application to "Heroku":http://heroku.com/, simply run _heroku create_ :
+To deploy the application to "Heroku":http://heroku.com/, simply run _heroku create_:
 
 {% highlight bash %}
 $ heroku create
@@ -98,7 +98,7 @@ Git remote heroku added
 
 The _evening-beach-14_ part will vary depending on the name Heroku chooses for your application.
 
-To push your newly created application to Heroku, do a _git push heroku master_ :
+To push your newly created application to Heroku, do a _git push heroku master_:
 
 {% highlight bash %}
 $ git push heroku master
@@ -129,13 +129,13 @@ To git@heroku.com:evening-beach-14.git
  * [new branch]      master -> master
 {% endhighlight %}
 
-Next, create the database on Heroku :
+Next, create the database on Heroku:
 
 {% highlight bash %}
 $ heroku rake db:setup
 {% endhighlight %}
 
-You should also install the free "SendGrid":http://sendgrid.com/ add-on for email delivery :
+You should also install the free "SendGrid":http://sendgrid.com/ add-on for email delivery:
 
 {% highlight bash %}
 $ heroku addons:add sendgrid:free
@@ -149,7 +149,7 @@ h2. Git hooks
 
 CoffeeScript and Compass both require generated files to be saved when they're compiled - this causes a problem on Heroku because access to the filesystem is limited. There are various hacks to get around this by saving to the _tmp_ folder and re-routing requests, but I decided it was probably easiest to just add the generated files to git and deploy them normally.
 
-To achieve this, I added a post-commit hook to the repository to generate these files whenever changes are committed. To add these, create the file _.git/hooks/pre-commit_ , make it executable, and add the following contents :
+To achieve this, I added a post-commit hook to the repository to generate these files whenever changes are committed. To add these, create the file _.git/hooks/pre-commit_ , make it executable, and add the following contents:
 
 {% highlight bash %}
 #!/bin/sh
@@ -158,19 +158,20 @@ compass compile
 rake public/javascripts/application.js
 jammit
 git add public/assets/common*
+git add public/javascripts/application.js
 {% endhighlight %}
 
-The first two commands generate the CSS and Javascript respectively, the 3rd command packages them up using Jammit, and the fourth makes sure they are included in the commit.
+The first two commands generate the CSS and Javascript respectively, the 3rd command packages them up using Jammit, and the last two make sure they are included in the commit.
 
 h2. Internationalization
 
-_Rails Kitchen Sink_ is fully I18N-ready, but unfortunately the only translation is currently (i assume fairly badly) auto-generated-french from Google translate. If you'd like to contribute a translation, you can start by looking at the "translation files":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/config/locales and "static pages":http://recursive-design.com/code/p/rails-kitchen-sink/source/tree/master/app/views/pages. There's not a great deal of text to translate, so if anyone is feeling particularly generous and/or bored, additional translations would be very much appreciated! 
+_Rails Kitchen Sink_ is fully I18N-ready, but unfortunately the only translation is currently (i assume fairly badly) auto-generated-french from Google translate. If you'd like to contribute a translation, you can start by looking at the "translation files":https://github.com/recurser/rails-kitchen-sink/tree/master/config/locales and "static pages":https://github.com/recurser/rails-kitchen-sink/tree/master/app/views/pages. There's not a great deal of text to translate, so if anyone is feeling particularly generous and/or bored, additional translations would be very much appreciated! 
 
 h2. Stylesheets
 
 Stylesheets in the _public/stylesheets_ folder are automatically generated by compass, so any changes you make to these files will be lost. Instead, you should edit the _sass_ files in _app/stylesheets_.
 
-When altering stylesheets during development, you should run _compass watch_ to make sure your changes are automatically compiled to _public/stylesheets_ :
+When altering stylesheets during development, you should run _compass watch_ to make sure your changes are automatically compiled to _public/stylesheets_:
 
 {% highlight bash %}
 $ compass watch
@@ -189,4 +190,26 @@ JavaScript and CSS are automatically compressed and packaged for production with
 
 h2. Bug Reports
 
-If you come across any problems, please "create a ticket":http://recursive-design.com/code/p/rails-kitchen-sink/issues/ and we'll try to get it fixed as soon as possible.
+If you come across any problems, please "create a ticket":https://github.com/recurser/rails-kitchen-sink/issues and we'll try to get it fixed as soon as possible.
+
+
+h2. Contributing
+
+Once you've made your commits:
+
+1. "Fork":http://help.github.com/fork-a-repo/ rails-kitchen-sink
+2. Create a topic branch - `git checkout -b my_branch`
+3. Push to your branch - `git push origin my_branch`
+4. Create a "Pull Request":http://help.github.com/pull-requests/ from your branch
+5. That's it!
+
+
+h2. Author
+
+Dave Perrett :: mail@recursive-design.com :: "@recurser":http://twitter.com/recurser
+
+
+h2. Copyright
+
+Copyright (c) 2010 Dave Perrett. See "License":https://github.com/recurser/rails-kitchen-sink/blob/master/LICENSE for details.
+
