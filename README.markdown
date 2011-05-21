@@ -90,7 +90,7 @@ Finished in 29.27 seconds
 
 Autotest will run the test suite automatically whenever you save changes, and if you're working on OSX, it will provide [Growl](http://growl.info/) feedback every time the test suite is run:
 
-!(http://recursive-design.com/images/projects/rails-kitchen-sink/autotest_growl_notification.png)
+![Autotest growl notification](http://recursive-design.com/images/projects/rails-kitchen-sink/autotest_growl_notification.png)
 
 Deploying To Heroku
 -------------------
