@@ -222,7 +222,7 @@ Once you've made your commits:
 Author
 ------
 
-Dave Perrett :: mail@recursive-design.com :: [@recurser](http://twitter.com/recurser
+Dave Perrett :: mail@recursive-design.com :: [@recurser](http://twitter.com/recurser)
 
 
 Copyright
